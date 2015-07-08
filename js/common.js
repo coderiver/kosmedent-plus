@@ -1,19 +1,15 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	// slider
+    $('.js-slider').on('init', function(event, slick){
+      $(this).addClass('is-loaded');
+    });
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
-
-	console.log($('body').html());
+  	$('.js-slider').slick({
+  		dots: true,
+  		arrows: false,
+      	adaptiveHeight: true,
+  		autoplay: true,
+		autoplaySpeed: 5000
+  	});
 });

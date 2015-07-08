@@ -1,1 +1,105 @@
 // Normally mainpage styles
+.header
+	padding: 0 25px 32px
+	.header__in
+		+clr
+.logo
+	float: left
+	padding: 36px 0
+	font-size: 0
+	a
+		display: inline-block
+.timetable, .adress
+	float: right
+	padding-top: 30px
+	text-align: center
+	margin-left: 8%
+	& > p
+		margin-bottom: 5px
+	ul
+		font-size: 0
+		li
+			display: inline-block
+			margin-left: 15px
+			font-size: 17px
+			&:first-child
+				margin-left: 0
+.menu
+	padding: 0 35px 
+	background: #aec736
+	+g(#c4dd4b, #9cb426)
+	border-bottom: 4px solid #7e960d
+	ul
+		+justify
+		li
+			+justify-child
+			a
+				display: inline-block
+				height: 53px
+				line-height: 53px
+				+semibold
+				font-size: 15px
+				text-transform: uppercase
+				color: $dark
+				&:hover
+					text-decoration: none
+.topper
+	position: relative
+	padding: 0 25px 
+	+gpu
+	margin-bottom: 45px
+	.topper__right
+		float: right
+		vertical-align: top
+		width: 247px
+		background: #d6fec2
+	.topper__left	
+		position: absolute
+		top: 0
+		left: 28px
+		bottom: 0
+		right: 272px					
+.slider
+	height: 100% 
+	overflow: hidden
+	opacity: 0
+	+tr(opacity 300ms)
+	&.is-loaded
+		opacity: 1
+	.gallery &
+		+r(767)
+			height: auto 	
+	.slick-list, .slick-track
+		height: 100% 
+	.slider__content
+		position: absolute
+		top: 40px
+		left: 40px
+		bottom: 50px
+		width: 50%
+		+gpu
+		& > p
+			margin-bottom: 30px
+		.h1
+			margin-bottom: 20px	
+//nav
+.nav
+	padding: 38px 0
+	background: #b3e0a3 
+	& > ul
+		& > li
+			& > a
+				display: block
+				padding: 0 28px
+				height: 53px
+				line-height: 53px
+				+semibold
+				font-size: 15px
+				text-transform: uppercase
+				color: $dark
+				+tr(background 300ms)
+				&:hover
+					background: darken(#b3e0a3, 10%)
+					text-decoration: none
+.main-wrap
+	padding: 0 28px 					
