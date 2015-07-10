@@ -1,19 +1,33 @@
 // Normally mainpage styles
 .header
-	padding: 0 25px 32px
+	position: relative
+	padding: 0 25px 28px
+	z-index: 2
 	.header__in
 		+clr
 .logo
 	float: left
-	padding: 36px 0
+	padding: 36px 0 27px
 	font-size: 0
 	a
 		display: inline-block
+	+r(1024)
+		padding: 36px 0 0
+	+r(767)
+		width: 160px
+		padding: 16px 0 0 
+		a
+			width: 100%
+			font-size: 0
+			img
+				width: 100%  	 	
 .timetable, .adress
 	float: right
 	padding-top: 30px
 	text-align: center
 	margin-left: 8%
+	+r(1024)
+		display: none
 	& > p
 		margin-bottom: 5px
 	ul
@@ -29,6 +43,8 @@
 	background: #aec736
 	+g(#c4dd4b, #9cb426)
 	border-bottom: 4px solid #7e960d
+	+r(1024)
+		display: none
 	ul
 		+justify
 		li
@@ -47,18 +63,31 @@
 	position: relative
 	padding: 0 25px 
 	+gpu
-	margin-bottom: 45px
+	margin-bottom: 42px
+	+r(767)
+		padding: 0
+		margin-top: -106px
 	.topper__right
 		float: right
 		vertical-align: top
 		width: 247px
 		background: #d6fec2
+		+r(767)
+			float: none
+			width: 100% 
 	.topper__left	
 		position: absolute
 		top: 0
 		left: 28px
 		bottom: 0
-		right: 272px					
+		right: 272px
+		+r(767)
+			position: relative
+			top: auto
+			left: auto
+			right: auto
+			bottom: auto
+			width: 100% 					
 .slider
 	height: 100% 
 	overflow: hidden
@@ -70,29 +99,36 @@
 		+r(767)
 			height: auto 	
 	.slick-list, .slick-track
-		height: 100% 
+		height: 500px
 	.slider__content
 		position: absolute
-		top: 40px
-		left: 40px
+		top: 45px
+		left: 29px
 		bottom: 50px
-		width: 50%
+		width: 55%
 		+gpu
 		& > p
-			margin-bottom: 30px
+			margin-bottom: 52px
 		.h1
-			margin-bottom: 20px	
+			margin-bottom: 13px
+		+r(767)
+			top: 90px
+			text-align: center
+			width: 100%
+			left: 0
+			& > p
+				margin-bottom: 25px		
 //nav
 .nav
-	padding: 38px 0
+	padding: 24px 0 45px
 	background: #b3e0a3 
 	& > ul
 		& > li
 			& > a
 				display: block
 				padding: 0 28px
-				height: 53px
-				line-height: 53px
+				height: 50px
+				line-height: 50px
 				+semibold
 				font-size: 15px
 				text-transform: uppercase
@@ -101,5 +137,230 @@
 				&:hover
 					background: darken(#b3e0a3, 10%)
 					text-decoration: none
+	+r(767)
+		text-align: center
+		& > ul
+			& > li
+				& > a
+					font-size: 17px				
 .main-wrap
-	padding: 0 28px 					
+	padding: 0 28px 	
+	.h1
+		margin-bottom: 19px				
+	.h2
+		text-align: center
+		margin-bottom: 28px
+.service-wrap
+	margin-bottom: 13px
+	+r(768)
+		text-align: center
+.service
+	position: relative
+	&:first-child
+		.service__text
+			background: rgba(#fdffd5, 0.8)
+	&:nth-child(2)
+		.service__text
+			background: rgba(#f3d1e2, 0.8)
+	&:nth-child(3)
+		.service__text
+			background: rgba(#e0fcd5, 0.8)
+	.service__img
+		position: relative
+		height: 180px
+		font-size: 0
+		overflow: hidden
+		z-index: 1
+		img
+			position: absolute
+			top: 0
+			left: 50%
+			+transform(translateX(-50%))
+			border-radius: 3px
+			min-height: 100%
+			min-width: 100%
+	.service__text
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 60px
+		+vertical
+		z-index: 2
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 18px
+			color: #000
+.benefits
+	text-align: center
+	& > p
+		margin-bottom: 25px
+	.benefits__item
+		text-align: center
+		font-size: 17px 
+	.benefits__img
+		font-size: 0
+		margin-bottom: 8px
+	.h3
+		margin-bottom:  10px
+.media
+	+clr
+	padding-bottom: 72px
+	.h2
+		text-align: left
+	.media__col
+		float: left
+		width: 50%
+	+r(768)
+		.media__col
+			width: 100% 	
+.date
+	font-size: 15px
+	color: #7c7c7c		
+.m-news
+	padding: 28px
+	background: #CEEEC2
+	border: 1px solid #b7c380
+	+r(600)
+		padding: 35px 20px 60px 
+	.slider__item
+		height: 350px
+		padding: 2px
+		+r(768)
+			height: auto
+	.m-news__item
+		+clr
+		display: block
+		text-decoration: none
+		margin-bottom: 28px
+		color: $dark
+	.m-news__img
+		float: left
+		width: 175px
+		margin-right: 18px
+		font-size: 0
+		img
+			width: 100%
+			height: auto
+		+r(600)
+			float: none
+			width: 100%
+			margin-right: 0
+			margin-bottom: 15px 	  		
+.m-comm
+	padding: 28px
+	background: #e5f4a0
+	border: 1px solid #b7c380
+	border-width: 1px 1px 1px 0
+	.slider__item
+		height: 350px
+		padding: 2px
+	+r(768)
+		border-width: 1px 
+		.slider__item
+			height: auto
+	+r(600)
+		padding: 35px 20px 60px		
+	.m-comm__item
+		font-size: 17px
+		color: $dark
+		+r(600)
+			padding-bottom: 35px
+	.m-comm__text
+		position: relative
+		padding-bottom: 25px
+		border-bottom: 1px solid #b7c380
+		margin-bottom: 25px
+		&:before
+			content: ""
+			position: absolute
+			bottom: -11px
+			left: 48px
+			+s(quote)
+.footer
+	.footer__in
+		max-width: 1158px
+		margin: 0 auto
+		background: #7d9601
+		text-align: center
+		padding: 35px 25px 10px
+	.footer__adress 
+		margin-bottom: 20px
+	.footer__call
+		max-width: 700px
+		margin: 0 auto 
+		.link
+			margin: 0 22px 20px
+		+r(767)
+			margin: 0 auto 70px 	 	 
+.link
+	display: inline-block
+	vertical-align: middle
+	color: #fff
+	text-decoration: none
+	opacity: 0.7
+	font-size: 17px
+	+tr(opacity 300ms)
+	&:hover
+		opacity: 1
+	span
+		margin-right: 10px
+	&.link_skype
+		font-size: 15px	
+.copyrights
+	font-size: 13px
+	color: rgba(#fff, 0.7)
+	text-align: left		 
+	+r(768)
+		text-align: center			 					 		 		
+.hamburger
+	display: none
+	position: absolute
+	top: 28px
+	right: 28px 
+	width: 55px
+	height: 48px
+	padding: 10px 
+	background: #b3cb3b
+	span
+		display: block
+		height: 6px
+		margin-top: 5px
+		background: #fff 
+		&:first-child
+			margin-top: 0  
+	+r(1024)
+		display: block
+	+r(767)
+		right: 10px
+		top: 16px					 					 		 		
+.mob-menu
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	padding-bottom: 105px
+	padding-top: 70px
+	background: #b3cb3b
+	text-align: center
+	z-index: 99
+	.mob-menu__close
+		position: absolute
+		top: 36px
+		right: 36px
+		+s(close)
+	.mob-menu__list
+		margin-bottom: 60px
+		li
+			margin-bottom: 30px
+			a
+				+semibold
+				font-size: 19px
+				text-transform: uppercase
+				color: $dark
+	+r(767)
+		top: 0
+		.mob-menu__close
+			top: 22px
+			right: 16px			

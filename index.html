@@ -5,6 +5,7 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 	<!-- theme color for android 5.0 -->
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
@@ -47,6 +48,22 @@
 				<li><a href="#"><span>врачи</span></a></li>
 				<li><a href="#"><span>Иногородним</span></a></li>
 				<li><a href="#"><span>Контакты</span></a></li>
+			</ul>
+		</nav>
+		<button type="button" class="hamburger js-hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="mob-menu js-mob-menu" style="display: none;">
+			<button type="button" class="mob-menu__close js-mob-menu-close"></button>
+			<ul class="mob-menu__list">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О клинике</a></li>
+				<li><a href="#">Лечение и цены</a></li>
+				<li><a href="#">Врачи</a></li>
+				<li><a href="#">Иногородним</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -92,10 +109,171 @@
 	</div>
 	<!-- main page content -->
 	<div class="main-wrap">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum placeat quis a sapiente autem esse, accusantium velit deserunt, provident veniam? Suscipit hic esse quidem velit facere odit, dolorem, consectetur sit?
+		<h2 class="h2">Услуги клиники</h2>
+		<div class="grid service-wrap">
+			<a href="#" class="grid__item service">
+				<div class="service__img">
+					<img src="img/img2.jpg" alt="">
+				</div>
+				<div class="service__text"><span>Профессиональное отбеливание зубов</span></div>
+			</a>
+			<a href="#" class="grid__item service">
+				<div class="service__img">
+					<img src="img/img3.jpg" alt="">
+				</div>
+				<div class="service__text"><span>Детская стоматология</span></div>
+			</a>
+			<a href="#" class="grid__item service">
+				<div class="service__img">
+					<img src="img/img4.jpg" alt="">
+				</div>
+				<div class="service__text"><span>Установка брекет систем</span></div>
+			</a>
+		</div>
+		<div class="benefits">
+			<h1 class="h1">Текст о важных преимуществах</h1>
+			<p>Если же у вас более серьезные проблемы, необходимо протезирование, имплантация зубов, или исправление прикуса, то выбор в пользу той или иной стоматологии сделать труднее. Советуем вам в сложных случаях получить консультацию врача-стоматолога в нескольких местах. Компетентный специалист  поможет подобрать метод протезирования, имплантации или исправления прикуса, наиболее подходящий именно для вас, исходя из ваших финансовых возможностей. </p>
+			<ul class="grid">
+				<li class="benefits__item grid__item">
+					<div class="benefits__img">
+						<img src="img/marker-big.png" alt="">
+					</div>
+					<h3 class="h3">Удобное расположение</h3>
+					<p>Здесь мы расскажем как здорово лечить зубы в нашем медицинском центре, красиво улыбаться и правильно чистить зубы</p>
+				</li>
+				<li class="benefits__item grid__item">
+					<div class="benefits__img">
+						<img src="img/doctor.png" alt="">
+					</div>
+					<h3 class="h3">Удобное расположение</h3>
+					<p>Здесь мы расскажем как здорово лечить зубы в нашем медицинском центре, красиво улыбаться и правильно чистить зубы</p>
+				</li>
+				<li class="benefits__item grid__item">
+					<div class="benefits__img">
+						<img src="img/med-bag.png" alt="">
+					</div>
+					<h3 class="h3">Удобное расположение</h3>
+					<p>Здесь мы расскажем как здорово лечить зубы в нашем медицинском центре, красиво улыбаться и правильно чистить зубы</p>
+				</li>
+			</ul>
+		</div>
+		<div class="media">
+			<div class="media__col">
+				<div class="m-news">
+					<h2 class="h2">Новости</h2>
+					<div class="slider js-slider">
+						<div class="slider__item">
+							<a href="#" class="m-news__item">
+								<div class="m-news__img">
+									<img src="img/img5.jpg" alt="">
+								</div>
+								<div class="m-news__info">
+									<div class="m-news__title">Как правильно питаться, чтобы всегда выглядеть красиво</div>
+									<div class="date">25 апреля 2015</div>
+								</div>
+							</a>
+							<a href="#" class="m-news__item">
+								<div class="m-news__img">
+									<img src="img/img5.jpg" alt="">
+								</div>
+								<div class="m-news__info">
+									<div class="m-news__title">Как правильно питаться, чтобы всегда выглядеть красиво</div>
+									<div class="date">25 апреля 2015</div>
+								</div>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a href="#" class="m-news__item">
+								<div class="m-news__img">
+									<img src="img/img5.jpg" alt="">
+								</div>
+								<div class="m-news__info">
+									<div class="m-news__title">Как правильно питаться, чтобы всегда выглядеть красиво</div>
+									<div class="date">25 апреля 2015</div>
+								</div>
+							</a>
+							<a href="#" class="m-news__item">
+								<div class="m-news__img">
+									<img src="img/img5.jpg" alt="">
+								</div>
+								<div class="m-news__info">
+									<div class="m-news__title">Как правильно питаться, чтобы всегда выглядеть красиво</div>
+									<div class="date">25 апреля 2015</div>
+								</div>
+							</a>
+						</div>
+						<div class="slider__item">
+							<a href="#" class="m-news__item">
+								<div class="m-news__img">
+									<img src="img/img5.jpg" alt="">
+								</div>
+								<div class="m-news__info">
+									<div class="m-news__title">Как правильно питаться, чтобы всегда выглядеть красиво</div>
+									<div class="date">25 апреля 2015</div>
+								</div>
+							</a>
+							<a href="#" class="m-news__item">
+								<div class="m-news__img">
+									<img src="img/img5.jpg" alt="">
+								</div>
+								<div class="m-news__info">
+									<div class="m-news__title">Как правильно питаться, чтобы всегда выглядеть красиво</div>
+									<div class="date">25 апреля 2015</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="media__col">
+				<div class="m-comm">
+					<h2 class="h2">Клиенты о нас</h2>
+					<div class="slider js-slider">
+						<div class="slider__item">
+							<div class="m-comm__item">
+								<div class="m-comm__text">Замечательные специалисты! Доброжелательное отношение врачей, качественная работа, ответственность и беспокойство за своего клиента показывают высокий профессионализм врачей медицинского центра. Спасибо за вашу чуткость и внимание!</div>
+								<div class="m-comm__author">Ольга Степанова</div>
+								<div class="date">08 июня 2015</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="m-comm__item">
+								<div class="m-comm__text">Замечательные специалисты! Доброжелательное отношение врачей, качественная работа, ответственность и беспокойство за своего клиента показывают высокий профессионализм врачей медицинского центра. Спасибо за вашу чуткость и внимание!</div>
+								<div class="m-comm__author">Ольга Степанова</div>
+								<div class="date">08 июня 2015</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="m-comm__item">
+								<div class="m-comm__text">Замечательные специалисты! Доброжелательное отношение врачей, качественная работа, ответственность и беспокойство за своего клиента показывают высокий профессионализм врачей медицинского центра. Спасибо за вашу чуткость и внимание!</div>
+								<div class="m-comm__author">Ольга Степанова</div>
+								<div class="date">08 июня 2015</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-<!-- END out-->
+<!-- footer-->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="footer__content">
+			<div class="footer__adress">
+				<a href="#" class="link link_map"><span class="icon-marker"></span>г. Москва, ул. Нижне-Покровская, д. 21</a>
+			</div>
+			<div class="footer__call">
+				<a href="#" class="link"><span class="icon-velcom"></span>+375 29 643-07-33</a>
+				<a href="#" class="link"><span class="icon-mtc"></span>+375 33 543-07-33</a>
+				<a href="#" class="link"><span class="icon-phone"></span>+375 17 243-07-33</a>
+				<a href="#" class="link"><span class="icon-viber"></span>+375 29 643-07-33</a>
+				<a href="#" class="link link_skype"><span class="icon-skype"></span>kosmedent</a>
+			</div>
+			<div class="copyrights">© 2015  ЧМУП «Космедент»</div>
+		</div> 
+	</div>
+</footer>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

@@ -62,15 +62,17 @@
 	img
 		display: block
 		min-width: 100%
-		min-height: 100%
 		+r(767)
 			position: absolute
 			left: 50%
 			+transform(translateX(-50%))
-	.gallery &
-		height: auto 
+	.topper &
 		img
-			+r(767)
+			min-height: 100%		
+	.media &
+		+r(767)
+			height: auto 
+			img
 				position: relative
 				left: auto
 				width: 100%
@@ -129,12 +131,6 @@
 	margin: 0
 	bottom: 47px
 	right: 32px
-	+r(1024)
-		bottom: 25px
-		right: 25px
-	+r(767)
-		right: 50%
-		+transform(translateX(50%))	
 	li
 		position: relative
 		display: inline-block
@@ -153,4 +149,15 @@
 		+hide-text 
 		&:hover
 			background: $orange
-	
+	+r(1024)
+		bottom: 25px
+		right: 25px
+	+r(767)
+		right: 50%
+		+transform(translateX(50%))	
+	.media &
+		+r(600)
+			width: 100% 
+			bottom: 0
+			li
+				padding: 0 5px 	

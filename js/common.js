@@ -12,4 +12,14 @@ head.ready(function() {
   		autoplay: true,
 		autoplaySpeed: 5000
   	});
+
+    // mobile nav
+
+    $('.js-hamburger').on('click', function(){
+      $('.js-mob-menu').slideDown();
+    });
+    $('.js-mob-menu-close').on('click', function(){
+      $('.js-mob-menu').slideUp();
+    }); 
+    
 });
