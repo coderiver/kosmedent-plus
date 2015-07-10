@@ -134,10 +134,12 @@
 				font-size: 15px
 				text-transform: uppercase
 				color: $dark
-				+tr(background 300ms)
 				&:hover
-					background: darken(#b3e0a3, 10%)
 					text-decoration: none
+				&.is-active
+					background: #5d8350
+					color: #fff
+					text-decoration: none 	
 	+r(767)
 		text-align: center
 		& > ul

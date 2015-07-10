@@ -140,8 +140,9 @@ h4, .h4 { font-size: 18px; }
   .slider .slider__content > p { margin-bottom: 25px; } }
 
 .nav { padding: 24px 0 45px; background: #b3e0a3; }
-.nav > ul > li > a { display: block; padding: 0 28px; height: 50px; line-height: 50px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 15px; text-transform: uppercase; color: #222; -moz-transition: background 300ms; -o-transition: background 300ms; -webkit-transition: background 300ms; transition: background 300ms; }
-.nav > ul > li > a:hover { background: #93d37d; text-decoration: none; }
+.nav > ul > li > a { display: block; padding: 0 28px; height: 50px; line-height: 50px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 15px; text-transform: uppercase; color: #222; }
+.nav > ul > li > a:hover { text-decoration: none; }
+.nav > ul > li > a.is-active { background: #5d8350; color: #fff; text-decoration: none; }
 @media only screen and (max-width: 767px) { .nav { text-align: center; }
   .nav > ul > li > a { font-size: 17px; } }
 
