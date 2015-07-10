@@ -99,7 +99,8 @@
 		+r(767)
 			height: auto 	
 	.slick-list, .slick-track
-		height: 500px
+		+r(767)
+			height: 500px
 	.slider__content
 		position: absolute
 		top: 45px
@@ -363,4 +364,56 @@
 		top: 0
 		.mob-menu__close
 			top: 22px
-			right: 16px			
+			right: 16px
+.sidebar
+	width: 247px
+	float: right
+	margin-left: 47px
+	+r(900)
+		width: 212px
+		margin-left: 25px
+	+r(767)
+		width: 100%
+		float: none 	
+.content
+	overflow: hidden
+	+r(767)
+		width: 100%
+		overflow: visible
+.article	
+	+light	
+	margin-bottom: 45px
+	h1
+		margin-bottom: 25px
+	h2
+		margin: 40px 0 25px 		
+	img
+		display: block
+		width: 100%
+	img[align="left"]
+		display: block
+		width: 50%
+		margin: 0 30px 18px 0
+	p
+		margin-bottom: 20px
+	a
+		color: #7e960d
+		&:hover
+			text-decoration: none	  	 	
+	ul
+		margin-bottom: 40px
+		text-align: left
+		li
+			position: relative
+			padding-left: 57px
+			margin-bottom: 13px
+			&:before
+				content: ""
+				position: absolute
+				top: 13px
+				left: 0
+				width: 36px
+				height: 1px
+				background: #7e960d
+.gallery
+	margin-bottom: 30px									

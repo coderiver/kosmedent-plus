@@ -8,10 +8,17 @@ head.ready(function() {
   	$('.js-slider').slick({
   		dots: true,
   		arrows: false,
-      	adaptiveHeight: true,
+      adaptiveHeight: true,
   		autoplay: true,
-		autoplaySpeed: 5000
+		  autoplaySpeed: 5000
   	});
+
+    $('.js-gallery').slick({
+      dots: true,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 5000
+    });
 
     // mobile nav
 
@@ -21,5 +28,5 @@ head.ready(function() {
     $('.js-mob-menu-close').on('click', function(){
       $('.js-mob-menu').slideUp();
     }); 
-    
+
 });

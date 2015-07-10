@@ -24,7 +24,22 @@ body
 	font-size: 17px 
 	line-height: 25px
 	color: $dark
-	background: #eaeaea 
+	background: #eaeaea
+=quote
+	display: block
+	margin-bottom: 20px
+	padding: 22px
+	background: #e5f4a0
+	text-align: left
+	border: 1px solid #b7c380
+	+proximanova
+	color: $dark
+	font-size: 17px
+	line-height: 24px
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none	 
 // mixins
 =justify
 	text-align: justify
@@ -51,8 +66,45 @@ body
 	max-width: 1158px
 	margin: 0 auto
 	background: #fff
+.main
+	+clr
+	max-width: 1158px
+	margin: 0 auto
+	background: #fff
+	padding: 0 25px
+	+r(767)
+		padding: 0 10px 	
 .clr
 	+clr	 
+.breadcrumbs
+	margin-bottom: 15px
+	+r(767)
+		text-align: center
+	ul
+		font-size: 0
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			margin-left: 50px
+			&:before
+				content: ""
+				position: absolute
+				top: 11px
+				left: -33px
+				width: 20px
+				height: 1px
+				background: #b4c186
+			&:first-child
+				margin-left: 0
+				&:before
+					display: none	
+			a
+				font-size: 13px
+				color: #b4c186
+				text-decoration: none
+				&:hover
+					text-decoration: underline	
 h1, .h1, h2, .h2, h4, .h4
 	+light	
 	line-height: 1.3
@@ -60,6 +112,7 @@ h1, .h1
 	font-size: 32px
 h2, .h2
 	font-size: 26px
+	margin-bottom: 30px
 h3, .h3
 	font-size: 19px
 	+semibold			
