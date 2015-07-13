@@ -791,4 +791,89 @@
 	.partners__title	
 		+light
 		font-size: 28px
-		margin-bottom: 20px											
+		margin-bottom: 20px
+		
+// treatment
+.treatment
+	.h1
+		margin-bottom: 37px
+	.grid__item
+		margin-bottom: 24px 	
+	.treatment__img
+		margin-bottom: 16px
+		font-size: 0
+		border-radius: 3px
+		line-height: 1
+		box-shadow: 0 1px 1px rgba(#9dd4e4, 0.9)
+		img
+			width: 100%
+	.treatment__title
+		display: inline-block
+		margin-bottom: 10px
+		color: #7e960d
+		font-size: 17px
+		+proximanova
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	.treatment__list
+		li
+			position: relative
+			padding-left: 28px
+			margin-bottom: 3px
+			&:before
+				content: ""
+				position: absolute
+				top: 13px
+				left: 0
+				width: 15px
+				height: 1px 
+				background: #cecece
+			a
+				color: #acacac
+				font-size: 15px
+				line-height: 1.5
+				text-decoration: underline
+				&:hover
+					text-decoration: none													
+// price
+.price
+	padding: 25px 0 0 25px
+	border-top: 1px solid #7e960d
+	&:first-child
+		border-top: none  	
+	+r(568)
+		text-align: center
+		padding: 20px 20px 0 					
+	.price__table
+		display: table
+		width: 100%
+		table-layout: fixed
+		border-collapse: collapse
+		+r(568)
+			display: block
+	.price__row
+		display: table-row
+		border-top: 1px solid #cecece
+		&:first-child
+			border-top: none
+		+r(568)
+			display: block	  
+	.price__name
+		display: table-cell
+		text-align: left
+		vertical-align: middle
+		padding: 20px 0
+		+r(568)
+			display: block
+			text-align: center
+			padding: 20px 0 0 
+	.price__value
+		display: table-cell
+		text-align: right
+		vertical-align: middle
+		padding: 20px 40px 20px 0
+		+r(568)
+			display: inline-block
+			text-align: center
+			padding: 20px					

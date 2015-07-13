@@ -385,6 +385,30 @@ h4, .h4 { font-size: 18px; }
 @media only screen and (max-width: 600px) { .partners .partners__content { display: block; width: 100%; } }
 .partners .partners__title { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 28px; margin-bottom: 20px; }
 
+.treatment .h1 { margin-bottom: 37px; }
+.treatment .grid__item { margin-bottom: 24px; }
+.treatment .treatment__img { margin-bottom: 16px; font-size: 0; border-radius: 3px; line-height: 1; box-shadow: 0 1px 1px rgba(157, 212, 228, 0.9); }
+.treatment .treatment__img img { width: 100%; }
+.treatment .treatment__title { display: inline-block; margin-bottom: 10px; color: #7e960d; font-size: 17px; font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; }
+.treatment .treatment__title:hover { text-decoration: underline; }
+.treatment .treatment__list li { position: relative; padding-left: 28px; margin-bottom: 3px; }
+.treatment .treatment__list li:before { content: ""; position: absolute; top: 13px; left: 0; width: 15px; height: 1px; background: #cecece; }
+.treatment .treatment__list li a { color: #acacac; font-size: 15px; line-height: 1.5; text-decoration: underline; }
+.treatment .treatment__list li a:hover { text-decoration: none; }
+
+.price { padding: 25px 0 0 25px; border-top: 1px solid #7e960d; }
+.price:first-child { border-top: none; }
+@media only screen and (max-width: 568px) { .price { text-align: center; padding: 20px 20px 0; } }
+.price .price__table { display: table; width: 100%; table-layout: fixed; border-collapse: collapse; }
+@media only screen and (max-width: 568px) { .price .price__table { display: block; } }
+.price .price__row { display: table-row; border-top: 1px solid #cecece; }
+.price .price__row:first-child { border-top: none; }
+@media only screen and (max-width: 568px) { .price .price__row { display: block; } }
+.price .price__name { display: table-cell; text-align: left; vertical-align: middle; padding: 20px 0; }
+@media only screen and (max-width: 568px) { .price .price__name { display: block; text-align: center; padding: 20px 0 0; } }
+.price .price__value { display: table-cell; text-align: right; vertical-align: middle; padding: 20px 40px 20px 0; }
+@media only screen and (max-width: 568px) { .price .price__value { display: inline-block; text-align: center; padding: 20px; } }
+
 .license .h1 { margin-bottom: 30px; }
 .license .license__list { font-size: 0; margin-left: -3%; }
 @media only screen and (max-width: 900px) { .license .license__list { margin-left: -5%; } }
