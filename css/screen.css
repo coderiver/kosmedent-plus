@@ -259,6 +259,34 @@ h4, .h4 { font-size: 18px; }
 
 .gallery { margin-bottom: 30px; }
 
+<<<<<<< HEAD
+.license .h1 { margin-bottom: 30px; }
+.license .license__list { font-size: 0; margin-left: -3%; }
+@media only screen and (max-width: 900px) { .license .license__list { margin-left: -5%; } }
+@media only screen and (max-width: 767px) { .license .license__list { margin-left: -3%; } }
+@media only screen and (max-width: 600px) { .license .license__list { margin-left: -5%; } }
+.license .license__item { display: inline-block; vertical-align: top; width: 22%; margin: 40px 0 28px 3%; }
+@media only screen and (max-width: 900px) { .license .license__item { width: 45%; margin-left: 5%; } }
+@media only screen and (max-width: 767px) { .license .license__item { width: 22%; margin-left: 3%; } }
+@media only screen and (max-width: 600px) { .license .license__item { width: 45%; margin-left: 5%; } }
+.license .license__item a { display: block; text-decoration: none; }
+.license .license__item a:hover span { color: #7e960d; border-color: transparent; }
+.license .license__item a:hover .license__img:before { opacity: 1; }
+.license .license__item a .license__img { position: relative; margin-bottom: 10px; border-radius: 3px; }
+.license .license__item a .license__img:before { content: ""; position: absolute; top: 0; bottom: 0; right: 0; left: 0; border-radius: 3px; border: 3px solid #7e960d; opacity: 0; -moz-transition: opacity 300ms; -o-transition: opacity 300ms; -webkit-transition: opacity 300ms; transition: opacity 300ms; }
+.license .license__item a .license__img img { display: block; width: 100%; height: auto; border-radius: 3px; }
+.license .license__item a span { display: inline; font-size: 15px; color: #222; line-height: 1.2; border-bottom: 1px dotted; -moz-transition: color 300ms, border-color 300ms; -o-transition: color 300ms, border-color 300ms; -webkit-transition: color 300ms, border-color 300ms; transition: color 300ms, border-color 300ms; }
+
+.pagination { text-align: center; font-size: 0; margin-top: 30px; }
+.pagination ul { display: inline-block; border: 1px solid #7e960d; }
+.pagination ul li { display: inline-block; border-left: 1px solid #7e960d; }
+.pagination ul li:first-child { border-left: none; }
+.pagination ul li a { display: block; width: 47px; height: 38px; line-height: 38px; font-size: 15px; color: #222; text-decoration: none; background: #b3cb3b; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
+.pagination ul li a:hover, .pagination ul li a.is-active { color: #fff; }
+.pagination ul li a.is-active { background: #7e960d; }
+
+.content { padding-bottom: 65px; }
+=======
 @media only screen and (max-width: 767px) { .adv { padding: 0 8px; } }
 .adv .adv__list { font-size: 0; }
 .adv .adv__item { display: inline-block; vertical-align: top; *zoom: 1; width: 50%; margin-bottom: 30px; }
@@ -324,6 +352,7 @@ h4, .h4 { font-size: 18px; }
 .radio input + div p { font-size: 13px; color: #c5c5c5; line-height: 1.6; }
 .radio input:checked + div:before { border-color: #fbb959; }
 .radio input:checked + div:after { content: ""; position: absolute; top: 6px; left: 6px; width: 5px; height: 5px; border-radius: 50%; background: #000; }
+>>>>>>> 1a97c299d3896f47ca8e42b67a5d36bad7628c59
 
 .error { text-align: center; }
 .error .error__code { margin-bottom: 50px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 260px; color: #ccc; line-height: 1; }
