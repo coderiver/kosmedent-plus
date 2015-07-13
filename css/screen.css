@@ -34,7 +34,7 @@ body { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal
 
 .main { *zoom: 1; max-width: 1158px; margin: 0 auto; background: #fff; padding: 0 25px; }
 .main:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 767px) { .main { padding: 0 10px; } }
+@media only screen and (max-width: 767px) { .main { padding: 0; } }
 
 .clr { *zoom: 1; }
 .clr:after { content: " "; display: table; clear: both; }
@@ -62,6 +62,7 @@ h4, .h4 { font-size: 18px; }
 .btn { position: relative; display: inline-block; padding: 0 20px; height: 40px; line-height: 40px; background: #f6ad44; color: #222; font-size: 14px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; border-bottom: 3px solid #c38222; text-decoration: none; text-transform: uppercase; -moz-transition: -moz-transform 200ms, border-width 200ms; -o-transition: -o-transform 200ms, border-width 200ms; -webkit-transition: -webkit-transform 200ms, border-width 200ms; transition: transform 200ms, border-width 200ms; }
 .btn:hover { -moz-transform: translateY(1px); -ms-transform: translateY(1px); -webkit-transform: translateY(1px); transform: translateY(1px); border-width: 2px; }
 .btn:active { -moz-transform: translateY(3px); -ms-transform: translateY(3px); -webkit-transform: translateY(3px); transform: translateY(3px); border-width: 0; }
+.btn.btn_green { background: #b3cb3b; border-color: #7e960d; }
 
 .grid { font-size: 0; margin-left: -3.3%; }
 @media only screen and (max-width: 767px) { .grid { text-align: center; } }
@@ -239,11 +240,11 @@ h4, .h4 { font-size: 18px; }
 
 .sidebar { width: 247px; float: right; margin-left: 47px; }
 @media only screen and (max-width: 900px) { .sidebar { width: 212px; margin-left: 25px; } }
-@media only screen and (max-width: 767px) { .sidebar { width: 100%; float: none; } }
+@media only screen and (max-width: 767px) { .sidebar { width: 100%; float: none; margin-left: 0; } }
 
 .content { overflow: hidden; }
 .content p { margin-bottom: 20px; }
-@media only screen and (max-width: 767px) { .content { width: 100%; overflow: visible; } }
+@media only screen and (max-width: 767px) { .content { width: 100%; overflow: visible; padding: 0 10px; } }
 
 .article { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; margin-bottom: 45px; }
 .article h1 { margin-bottom: 25px; }
@@ -279,6 +280,50 @@ h4, .h4 { font-size: 18px; }
 @media only screen and (max-width: 900px) { .history .history__list .history__item { width: 100%; padding-right: 0; } }
 .history .history__list .history__year { position: relative; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 36px; padding-bottom: 27px; margin-bottom: 17px; }
 .history .history__list .history__year:after { content: ""; position: absolute; bottom: 0; left: 0; width: 82px; height: 4px; background: #bed746; }
+
+.form.form_half { max-width: 500px; }
+.form .form__row { position: relative; margin-bottom: 10px; padding-bottom: 25px; text-align: left; }
+.form .form__row:before { content: "*"; position: absolute; top: 16px; left: 0; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #e38600; z-index: 2; display: none; }
+.form .form__row > p { margin-bottom: 15px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; }
+.form .form__row.require:before { display: block; }
+.form .form__submit { text-align: center; }
+
+.input, .textarea { display: block; text-align: left; }
+.input input, .input textarea, .textarea input, .textarea textarea { width: 100%; height: 55px; padding: 0 16px; border-bottom: 2px solid #cecece; border-width: 0 0 2px 0; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #222; -moz-transition: border-color 300ms; -o-transition: border-color 300ms; -webkit-transition: border-color 300ms; transition: border-color 300ms; }
+.input input:-ms-input-placeholder, .input textarea:-ms-input-placeholder, .textarea input:-ms-input-placeholder, .textarea textarea:-ms-input-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input:-moz-placeholder, .input textarea:-moz-placeholder, .textarea input:-moz-placeholder, .textarea textarea:-moz-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input::-moz-placeholder, .input textarea::-moz-placeholder, .textarea input::-moz-placeholder, .textarea textarea::-moz-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input::-webkit-input-placeholder, .input textarea::-webkit-input-placeholder, .textarea input::-webkit-input-placeholder, .textarea textarea::-webkit-input-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input::placeholder, .input textarea::placeholder, .textarea input::placeholder, .textarea textarea::placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input:focus, .input textarea:focus, .textarea input:focus, .textarea textarea:focus { border-color: #2d5a23; }
+.input input:focus:-ms-input-placeholder, .input textarea:focus:-ms-input-placeholder, .textarea input:focus:-ms-input-placeholder, .textarea textarea:focus:-ms-input-placeholder { font-size: 0; }
+.input input:focus:-moz-placeholder, .input textarea:focus:-moz-placeholder, .textarea input:focus:-moz-placeholder, .textarea textarea:focus:-moz-placeholder { font-size: 0; }
+.input input:focus::-moz-placeholder, .input textarea:focus::-moz-placeholder, .textarea input:focus::-moz-placeholder, .textarea textarea:focus::-moz-placeholder { font-size: 0; }
+.input input:focus::-webkit-input-placeholder, .input textarea:focus::-webkit-input-placeholder, .textarea input:focus::-webkit-input-placeholder, .textarea textarea:focus::-webkit-input-placeholder { font-size: 0; }
+.input input:focus::placeholder, .input textarea:focus::placeholder, .textarea input:focus::placeholder, .textarea textarea:focus::placeholder { font-size: 0; }
+.input .error__alert, .textarea .error__alert { display: none; position: absolute; bottom: 0; left: 0; padding-top: 3px; font-size: 13px; color: #ff0000; }
+.input.has-error input, .textarea.has-error input { border-color: #ff0000; }
+.input.has-error .error__alert, .textarea.has-error .error__alert { display: block; }
+
+.textarea { position: relative; }
+.textarea:after { content: ""; position: absolute; bottom: 10px; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #cecece transparent; pointer-events: none; -moz-transition: border-color 300ms; -o-transition: border-color 300ms; -webkit-transition: border-color 300ms; transition: border-color 300ms; }
+.textarea.is-focused:after { width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #2d5a23 transparent; }
+.textarea textarea { height: 60px; padding: 16px; max-width: 100%; min-width: 100%; max-height: 200px; }
+
+.radio-wrap { *zoom: 1; text-align: left; }
+.radio-wrap:after { content: " "; display: table; clear: both; }
+.radio-wrap .radio { float: right; width: 200px; }
+.radio-wrap .radio:first-child { float: left; }
+@media only screen and (max-width: 600px) { .radio-wrap .radio { width: 45%; } }
+
+.radio { position: relative; display: block; margin-bottom: 5px; }
+.radio input { position: absolute; opacity: 0; }
+.radio input + div { position: relative; padding-left: 32px; }
+.radio input + div:before { content: ""; position: absolute; top: 0; left: 0; width: 17px; height: 17px; border-radius: 50%; border: 1px solid #cecece; }
+.radio input + div span { display: block; margin-bottom: 5px; font-size: 15px; color: #222; }
+.radio input + div p { font-size: 13px; color: #c5c5c5; line-height: 1.6; }
+.radio input:checked + div:before { border-color: #fbb959; }
+.radio input:checked + div:after { content: ""; position: absolute; top: 6px; left: 6px; width: 5px; height: 5px; border-radius: 50%; background: #000; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 .slick-slider:hover .slick-prev, .slick-slider:hover .slick-next { -moz-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0); transform: translateX(0); }
