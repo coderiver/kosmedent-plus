@@ -1,6 +1,22 @@
 head.ready(function() {
 
-	  // validation
+	  // accordeon
+
+    $('.js-accordeon').on('click', function(){
+        if ($(this).hasClass('is-active')) {
+            $(this).removeClass('is-active');
+            $(this).find('.js-accordeon-data').slideUp();
+        }
+        else {
+            $('.js-accordeon').removeClass('is-active');
+            $('.js-accordeon-data').slideUp();
+
+            $(this).addClass('is-active');
+            $(this).find('.js-accordeon-data').slideDown();
+        }
+    });
+
+    // validation
 
     var form_validate = $('.js-validate');
     if (form_validate.length) {
