@@ -565,11 +565,14 @@
 	&:after
 		content: ""
 		position: absolute
-		bottom: 30px
+		bottom: 35px
 		right: 0
 		+arr(13, 9, #cecece, br)
 		pointer-events: none
 		+tr(border-color 300ms)
+	.form_half &
+		&:after
+			bottom: 30px
 	&.is-focused
 		&:after
 			+arr(13, 9, #2d5a23, br)
@@ -931,4 +934,223 @@
 			margin-bottom: 10px
 	.doctors__job
 		font-size: 15px
-		margin-bottom: 20px								
+		margin-bottom: 20px
+.map
+	position: relative
+	height: 390px
+	& > div
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0										
+// contacts
+.contacts
+	.contacts__topper
+		+clr
+		.h1
+			float: left
+			margin-bottom: 35px
+		.btn
+			float: right
+		+r(480)
+			text-align: center
+			margin-bottom: 40px
+			.h1
+				float: none
+				margin-bottom: 20px
+			.btn
+				float: none	
+	.tabs
+		.tabs__nav
+			width: auto 
+			padding-top: 0
+			+r(600)
+				width: 100% 
+				text-align: center 
+			li
+				a
+					width: 195px
+					text-align: center 
+					color: $dark
+					height: 37px
+					line-height: 37px
+					+semibold
+					text-transform: uppercase
+					font-size: 15px
+					&:hover
+						span
+							border-bottom: none
+					+r(600)
+						width: auto
+						padding: 0 35px 		 
+				&.is-active
+					a
+						background: #fdbe61 	
+		.tabs__content
+			clear: both
+			+clr
+			padding-top: 46px
+			overflow: visible
+.number
+	display: inline-block
+	vertical-align: middle
+	margin-left: 30px
+	margin-bottom: 15px
+	font-size: 17px
+	color: $dark
+	text-decoration: none
+	span
+		display: inline-block
+		vertical-align: middle
+		&:first-child
+			margin-right: 3px
+	&.number_viber
+		color: #b580e0
+	&.number_skype
+		font-size: 13px
+		color: #00aeec
+	&.number_map
+		margin-left: 0
+		font-size: 13px
+		color: #c7d6df
+.number-list
+	.number
+		position: relative
+		padding-left: 35px 
+		margin-bottom: 0
+		span
+			position: absolute
+			top: 50%
+			left: 0
+			+transform(translateY(-50%))			
+.route
+	.h1
+		margin-bottom: 30px
+	.h2, .h3
+		margin-bottom: 5px
+	& > p
+		color: $dark
+		font-size: 15px
+	.route__row
+		font-size: 0
+		border-top: 1px solid #cecece
+		padding: 30px 0 
+		&:first-child
+			border-top: none 
+	.route__col
+		display: inline-block
+		vertical-align: top
+		width: 25%
+		font-size: 17px
+		color: #969696
+		padding-right: 5px 
+		p
+			color: $dark
+			margin-bottom: 0
+			font-size: 15px
+			text-align: left
+			span
+				display: inline-block
+				margin-left: 10px
+		a
+			color: $dark
+			font-size: 15px
+			&:hover
+				text-decoration: none
+		a.number
+			+light
+			color: $dark
+			margin-left: 0
+			&.number_viber
+				color: #b580e0
+			&.number_skype
+				+proximanova
+				font-size: 15px
+				color: #00aeec
+			&.number_mail
+				+proximanova
+				color: $dark
+				+text-overflow
+		&.small
+			width: 16%			
+		&.wide
+			width: 84%
+			font-size: 0
+			.route__col.info
+				width: 33.3% 	
+		&.info
+			width: 28%
+		&.wide-link	 	
+			width: 75%
+			a
+				display: inline-block
+				max-width: 100%
+				+text-overflow
+		+r(1024)
+			font-size: 15px
+			margin-bottom: 5px
+			p
+				font-size: 15px
+		+r(768)
+			&.wide
+				width: 75% 
+				.route__col.info
+					width: 100%
+					display: block
+					margin-bottom: 5px
+					.number
+						margin-bottom: 0
+						.number-list &
+							margin-bottom: 5px
+
+			&.small
+				width: 25%
+			&.info
+				width: 75%
+// popup
+.popup
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	background: rgba(#000, 0.7)
+	+vertical
+	overflow-y: auto
+	z-index: 999
+	.popup__in
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		background: #fff
+		width: 600px
+		padding: 55px 48px 50px
+		+r(700)
+			width: 100% 
+			padding: 55px 28px 30px
+		+r(480)
+			padding: 55px 16px 30px 	  		
+	.popup__close
+		position: absolute
+		top: -31px
+		right: -48px
+		+s(close-narrow)
+		opacity: 0.7
+		+tr(opacity 300ms)
+		&:hover
+			opacity: 1
+		+r(1024)
+			top: 20px
+			right: 20px
+			+s(close-narrow-dark)	
+			opacity: 1
+		+r(568)
+			top: 15px
+			right: 15px	
+	.popup__content
+		.h1
+			text-align: center
+			margin-bottom: 40px
+			+r(600)
+				margin-bottom: 20px				 									
