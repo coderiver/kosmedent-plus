@@ -379,6 +379,8 @@
 		float: none 	
 .content
 	overflow: hidden
+	p
+		margin-bottom: 20px
 	+r(767)
 		width: 100%
 		overflow: visible
@@ -396,8 +398,6 @@
 		display: block
 		width: 50%
 		margin: 0 30px 18px 0
-	p
-		margin-bottom: 20px
 	a
 		color: #7e960d
 		&:hover
@@ -418,4 +418,73 @@
 				height: 1px
 				background: #7e960d
 .gallery
-	margin-bottom: 30px									
+	margin-bottom: 30px
+// advantages
+.adv
+	+r(767)
+		padding: 0 8px 
+	.adv__list
+		font-size: 0
+	.adv__item
+		display: inline-block
+		vertical-align: top
+		+clr
+		width: 50%
+		margin-bottom: 30px
+		+r(900)
+			width: 100% 
+		+r(767)
+			margin-bottom: 10px
+	.adv__icon
+		width: 81px
+		float: left
+		margin-right: 7%
+	.adv__text
+		overflow: hidden
+		padding-right: 7%
+		p
+			font-size: 15px
+			color: $dark
+			text-align: left
+		+r(767)
+			.h3
+				margin-bottom: 8px
+			p
+				margin-bottom: 0										
+.history
+	& > p
+		margin-bottom: 34px
+	.h1
+		margin-bottom: 31px	
+	.history__list
+		font-size: 0
+		.history__item
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			margin-bottom: 30px
+			padding-right: 7%
+			.h3
+				line-height: 1.4
+				margin-bottom: 13px
+			p
+				margin-bottom: 0
+				font-size: 15px
+				color: $dark
+			+r(900)
+				width: 100%
+				padding-right: 0
+		.history__year
+			position: relative
+			+semibold
+			font-size: 36px 
+			padding-bottom: 27px
+			margin-bottom: 17px
+			&:after
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 82px
+				height: 4px
+				background: #bed746				
