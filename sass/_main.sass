@@ -121,7 +121,7 @@
 				margin-bottom: 25px		
 //nav
 .nav
-	padding: 24px 0 45px
+	padding: 24px 0 27px
 	background: #b3e0a3 
 	& > ul
 		& > li
@@ -249,26 +249,31 @@
 			width: 100%
 			margin-right: 0
 			margin-bottom: 15px 	  		
-.m-comm
+.comm
 	padding: 28px
 	background: #e5f4a0
 	border: 1px solid #b7c380
-	border-width: 1px 1px 1px 0
+	margin-bottom: 24px
+	+r(600)
+		padding: 35px 20px	 
+	.media__col &
+		margin-bottom: 0
+		border-width: 1px 1px 1px 0
+		+r(768)
+			border-width: 1px
+			.slider__item
+				height: auto 
+		+r(600)
+			padding: 35px 20px 60px
+			.comm__item
+				padding-bottom: 35px	
 	.slider__item
 		height: 350px
 		padding: 2px
-	+r(768)
-		border-width: 1px 
-		.slider__item
-			height: auto
-	+r(600)
-		padding: 35px 20px 60px		
-	.m-comm__item
+	.comm__item
 		font-size: 17px
 		color: $dark
-		+r(600)
-			padding-bottom: 35px
-	.m-comm__text
+	.comm__text
 		position: relative
 		padding-bottom: 25px
 		border-bottom: 1px solid #b7c380
