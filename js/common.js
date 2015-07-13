@@ -1,6 +1,15 @@
 head.ready(function() {
 
-	// slider
+	// textarea focus event
+
+    $('.textarea textarea').on('focus', function(){
+      $(this).parent('.textarea').addClass('is-focused');
+    });
+    $('.textarea textarea').on('blur', function(){
+      $(this).parent('.textarea').removeClass('is-focused');
+    }); 
+
+  // slider
     $('.js-slider').on('init', function(event, slick){
       $(this).addClass('is-loaded');
     });
