@@ -409,6 +409,22 @@ h4, .h4 { font-size: 18px; }
 .price .price__value { display: table-cell; text-align: right; vertical-align: middle; padding: 20px 40px 20px 0; }
 @media only screen and (max-width: 568px) { .price .price__value { display: inline-block; text-align: center; padding: 20px; } }
 
+.doctors .h1 { margin-bottom: 25px; }
+.doctors > p { margin-bottom: 35px; }
+.doctors .doctors__list { padding-left: 4px; }
+.doctors .doctors__item { display: table; width: 100%; margin-bottom: 35px; border-collapse: collapse; table-layout: fixed; background: #ceeec2; border: 1px solid #b7c380; }
+@media only screen and (max-width: 480px) { .doctors .doctors__item { display: block; text-align: center; margin-bottom: 16px; } }
+.doctors .doctors__img { display: table-cell; vertical-align: top; width: 176px; overflow: hidden; border-right: 1px solid #b7c380; }
+.doctors .doctors__img img { display: block; margin: 0 auto; height: auto; min-height: 100%; }
+@media only screen and (max-width: 480px) { .doctors .doctors__img { display: block; padding-top: 30px; width: 100%; }
+  .doctors .doctors__img img { height: auto; } }
+.doctors .doctors__info { display: table-cell; vertical-align: top; padding: 27px; }
+@media only screen and (max-width: 960px) { .doctors .doctors__info { padding: 17px 17px 45px; } }
+@media only screen and (max-width: 480px) { .doctors .doctors__info { display: block; } }
+.doctors .doctors__name { font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 24px; margin-bottom: 15px; }
+@media only screen and (max-width: 767px) { .doctors .doctors__name { font-size: 19px; margin-bottom: 10px; } }
+.doctors .doctors__job { font-size: 15px; margin-bottom: 20px; }
+
 .license .h1 { margin-bottom: 30px; }
 .license .license__list { font-size: 0; margin-left: -3%; }
 @media only screen and (max-width: 900px) { .license .license__list { margin-left: -5%; } }
