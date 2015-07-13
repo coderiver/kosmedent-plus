@@ -742,4 +742,53 @@
 		+r(900)
 			padding: 30px 22px
 		+r(568)
-			padding: 30px 10px								
+			padding: 30px 10px
+			
+// partners
+.partners
+	.h1
+		margin-bottom: 26px
+	& > p
+		margin-bottom: 38px
+	.partners__list
+		margin-bottom: 48px		
+	.partners__item
+		display: table
+		width: 100%
+		table-layout: fixed
+		padding: 30px 25px 40px 
+		margin-bottom: 35px
+		background: #f7f7f7
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12)
+		+r(600)
+			padding: 20px 15px
+			display: block 
+			text-align: center
+	.partners__img
+		display: table-cell
+		width: 188px
+		vertical-align: middle
+		font-size: 0
+		img
+			max-width: 100%
+		+r(600)
+			display: block
+			width: 100%
+			margin-bottom: 20px 	
+	.partners__content
+		display: table-cell
+		font-size: 15px
+		color: $dark
+		p
+			margin-bottom: 10px
+		a
+			color: $dark
+			&:hover
+				text-decoration: none
+		+r(600)
+			display: block
+			width: 100%		
+	.partners__title	
+		+light
+		font-size: 28px
+		margin-bottom: 20px											
