@@ -127,9 +127,7 @@
 		& > li
 			& > a
 				display: block
-				padding: 0 28px
-				height: 50px
-				line-height: 50px
+				padding: 14px 28px
 				+semibold
 				font-size: 15px
 				text-transform: uppercase
@@ -621,3 +619,26 @@
 			height: 5px
 			border-radius: 50%
 			background: #000								
+// error
+.error
+	text-align: center
+	.error__code
+		margin-bottom: 50px
+		+semibold
+		font-size: 260px
+		color: #ccc
+		line-height: 1
+		+r(768)
+			font-size: 180px
+		+r(480)
+			font-size: 120px 	
+	.error__info
+		.h2
+			margin-bottom: 20px
+		p
+			font-size: 15px 
+			color: $dark
+		a
+			color: #7e960d
+			&:hover
+				text-decoration: none				

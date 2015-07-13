@@ -153,7 +153,7 @@ h4, .h4 { font-size: 18px; }
   .slider .slider__content > p { margin-bottom: 25px; } }
 
 .nav { padding: 24px 0 45px; background: #b3e0a3; }
-.nav > ul > li > a { display: block; padding: 0 28px; height: 50px; line-height: 50px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 15px; text-transform: uppercase; color: #222; }
+.nav > ul > li > a { display: block; padding: 14px 28px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 15px; text-transform: uppercase; color: #222; }
 .nav > ul > li > a:hover { text-decoration: none; }
 .nav > ul > li > a.is-active { background: #5d8350; color: #fff; text-decoration: none; }
 @media only screen and (max-width: 767px) { .nav { text-align: center; }
@@ -324,6 +324,15 @@ h4, .h4 { font-size: 18px; }
 .radio input + div p { font-size: 13px; color: #c5c5c5; line-height: 1.6; }
 .radio input:checked + div:before { border-color: #fbb959; }
 .radio input:checked + div:after { content: ""; position: absolute; top: 6px; left: 6px; width: 5px; height: 5px; border-radius: 50%; background: #000; }
+
+.error { text-align: center; }
+.error .error__code { margin-bottom: 50px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 260px; color: #ccc; line-height: 1; }
+@media only screen and (max-width: 768px) { .error .error__code { font-size: 180px; } }
+@media only screen and (max-width: 480px) { .error .error__code { font-size: 120px; } }
+.error .error__info .h2 { margin-bottom: 20px; }
+.error .error__info p { font-size: 15px; color: #222; }
+.error .error__info a { color: #7e960d; }
+.error .error__info a:hover { text-decoration: none; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 .slick-slider:hover .slick-prev, .slick-slider:hover .slick-next { -moz-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0); transform: translateX(0); }
