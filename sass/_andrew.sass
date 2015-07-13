@@ -136,4 +136,139 @@ $green1-l: #b8ce48
 .icon-timing
 	display: inline-block
 	+s(timing)
-	
+
+// doctors
+.doctors
+
+		
+.doctor
+	.doctor__topper
+		+clr
+		padding-left: 2px
+		margin-bottom: 30px
+		+r(767)
+			margin-bottom: 10px
+		+r(568)
+			text-align: center
+	.doctor__img
+		width: 212px
+		float: left
+		margin-right: 32px
+		font-size: 0
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12)
+		img
+			display: block
+			width: 100%
+			max-width: 212px
+			height: auto
+		+r(568)
+			float: none
+			margin-right: 0
+			display: inline-block
+			text-align: center
+			margin-bottom: 20px	 
+	.doctor__about
+		overflow: hidden
+		p
+			font-size: 15px
+			color: $dark
+		+r(767)
+			p
+				margin-bottom: 10px 	
+		+r(568)
+			overflow: visible
+			display: block	
+	.doctor__spec
+		border: 1px solid #cecece
+		padding: 20px 0
+		border-width: 1px 0
+		margin-bottom: 30px
+		font-size: 15px
+		strong
+			font-size: 19px
+	.doctor__education
+		.h3
+			+r(767)
+				margin-bottom: 10px 
+		p
+			margin: 10px 0
+	.article
+		+r(568)
+			ul
+				text-align: center
+				li
+					padding-left: 0
+					margin-bottom: 10px
+					&:before
+						display: none			
+						
+.nonres
+	display: table
+	width: 100%
+	border-collapse: collapse
+	table-layout: fixed
+	background: #ceeec2 
+	border: 1px solid #b7c380 
+	+r(600)
+		display: block
+		text-align: center
+	.nonres__img
+		display: table-cell
+		vertical-align: middle
+		width: 210px 
+		text-align: center
+		font-size: 0
+		img
+			max-width: 90%
+		+r(900)
+			width: 150px
+		+r(600)
+			display: block
+			width: 100% 
+			padding-top: 20px		
+	.nonres__content
+		display: table-cell
+		vertical-align: top
+		padding: 32px 32px 32px 0
+		.h2
+			margin-bottom: 20px
+		+r(600)
+			display: block
+			padding: 20px 	
+	.nonres__list
+		font-size: 0
+		li
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			margin-bottom: 15px
+			padding-left: 28px
+			&:before
+				content: ""
+				position: absolute
+				top: 10px
+				left: 0
+				width: 13px
+				height: 1px
+				background: #222 
+			a
+				font-size: 15px
+				color: #222
+				letter-spacing: 0.5px
+				&:hover
+					text-decoration: none
+			+r(600)
+				width: 100%
+				padding-left: 0
+				margin-bottom: 8px
+				&:before
+					display: none
+				a
+					font-size: 17px	 		 
+.block
+	margin-bottom: 35px 
+	+r(768)
+		margin-bottom: 25px
+	+r(568)
+		margin-bottom: 15px						
