@@ -537,6 +537,8 @@
 			border-color: #2d5a23
 			+placeholder
 				font-size: 0
+		&.error
+			text-align: left		
 	.error__alert
 		display: none
 		position: absolute
@@ -546,23 +548,27 @@
 		font-size: 13px
 		color: #ff0000 		
 	&.has-error
-		input
+		input, textarea
 			border-color: #ff0000
 		.error__alert
 			display: block
 .textarea
 	position: relative
+	padding-bottom: 20px
 	&:after
 		content: ""
 		position: absolute
-		bottom: 10px
+		bottom: 30px
 		right: 0
 		+arr(13, 9, #cecece, br)
 		pointer-events: none
 		+tr(border-color 300ms)
 	&.is-focused
 		&:after
-			+arr(13, 9, #2d5a23, br)	 
+			+arr(13, 9, #2d5a23, br)
+	&.has-error
+		&:after
+			+arr(13, 9, #ff0000, br)			 
 	textarea
 		height: 60px
 		padding: 16px 

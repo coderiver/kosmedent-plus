@@ -1,6 +1,26 @@
 head.ready(function() {
 
-	// textarea focus event
+	  // validation
+
+    var form_validate = $('.js-validate');
+    if (form_validate.length) {
+        form_validate.each(function () {
+            var form_this = $(this);
+            $.validate({
+                form : form_this,
+                validateOnBlur : false,
+                borderColorOnError : false,
+                scrollToTopOnError : false
+            });
+        });
+    };
+  // fancybox init
+
+    $('.fancybox').fancybox({
+        padding: 0
+    });
+
+  // textarea focus event
 
     $('.textarea textarea').on('focus', function(){
       $(this).parent('.textarea').addClass('is-focused');
