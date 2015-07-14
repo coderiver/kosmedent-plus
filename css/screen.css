@@ -199,7 +199,7 @@ h4, .h4 { font-size: 18px; }
 
 .media { *zoom: 1; padding-bottom: 72px; }
 .media:after { content: " "; display: table; clear: both; }
-.media .h2 { text-align: left; }
+.media .h2 { text-align: left; margin-bottom: 18px; }
 .media .media__col { float: left; width: 50%; }
 @media only screen and (max-width: 768px) { .media .media__col { width: 100%; } }
 
@@ -207,7 +207,7 @@ h4, .h4 { font-size: 18px; }
 
 .m-news { padding: 28px; background: #CEEEC2; border: 1px solid #b7c380; }
 @media only screen and (max-width: 600px) { .m-news { padding: 35px 20px 60px; } }
-.m-news .slider__item { height: 350px; padding: 2px; }
+.m-news .slider__item { height: 240px; padding: 2px; }
 @media only screen and (max-width: 768px) { .m-news .slider__item { height: auto; } }
 .m-news .m-news__item { *zoom: 1; display: block; text-decoration: none; margin-bottom: 28px; color: #222; }
 .m-news .m-news__item:after { content: " "; display: table; clear: both; }
@@ -222,7 +222,7 @@ h4, .h4 { font-size: 18px; }
   .media__col .comm .slider__item { height: auto; } }
 @media only screen and (max-width: 600px) { .media__col .comm { padding: 35px 20px 60px; }
   .media__col .comm .comm__item { padding-bottom: 35px; } }
-.comm .slider__item { height: 350px; padding: 2px; }
+.comm .slider__item { height: 240px; padding: 2px; }
 .comm .comm__item { font-size: 17px; color: #222; }
 .comm .comm__text { position: relative; padding-bottom: 25px; border-bottom: 1px solid #b7c380; margin-bottom: 25px; }
 .comm .comm__text:before { content: ""; position: absolute; bottom: -11px; left: 48px; background: url('../img/icons-s4f1ecb2486.png') 0 -1138px no-repeat; width: 17px; height: 11px; }
@@ -639,7 +639,8 @@ h4, .h4 { font-size: 18px; }
 .slick-dots button:hover { background: #f6ad44; }
 @media only screen and (max-width: 1024px) { .slick-dots { bottom: 25px; right: 25px; } }
 @media only screen and (max-width: 767px) { .slick-dots { right: 50%; -moz-transform: translateX(50%); -ms-transform: translateX(50%); -webkit-transform: translateX(50%); transform: translateX(50%); } }
-@media only screen and (max-width: 600px) { .media .slick-dots { width: 100%; bottom: 0; }
+.media .slick-dots { bottom: 0; }
+@media only screen and (max-width: 600px) { .media .slick-dots { width: 100%; }
   .media .slick-dots li { padding: 0 5px; } }
 
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
