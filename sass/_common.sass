@@ -74,7 +74,9 @@ body
 	background: #fff
 	padding: 0 25px
 	+r(767)
-		padding: 0 	
+		padding: 0 
+		+display-flex
+		+flex-direction(column)		
 .clr
 	+clr	 
 .breadcrumbs
@@ -158,6 +160,8 @@ h4, .h4
 		width: 30%
 		margin-left: 3.3%
 		margin-bottom: 30px
+		+r(768)
+			width: 46% 
 		+r(767)
 			width: 35%
 			margin-bottom: 25px
