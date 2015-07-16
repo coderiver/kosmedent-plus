@@ -258,7 +258,21 @@
 			float: none
 			width: 100%
 			margin-right: 0
-			margin-bottom: 15px 	  		
+			margin-bottom: 15px
+.comm-topper
+	+clr
+	+r(480)
+		text-align: center
+		margin-bottom: 40px
+	.h1
+		float: left
+		+r(480)
+			float: none
+			margin-bottom: 20px
+	.btn
+		float: right			
+		+r(480)
+			float: none	 	  		
 .comm
 	padding: 28px
 	background: #e5f4a0
@@ -301,6 +315,8 @@
 		background: #7d9601
 		text-align: center
 		padding: 35px 25px 10px
+		+r(767)
+			padding: 45px 25px 50px 
 	.footer__adress 
 		margin-bottom: 20px
 	.footer__call
@@ -407,7 +423,7 @@
 	h1
 		margin-bottom: 25px
 	h2
-		margin: 40px 0 25px 		
+		margin: 40px 0 19px 		
 	img
 		display: block
 		width: 100%
@@ -425,7 +441,8 @@
 		li
 			position: relative
 			padding-left: 57px
-			margin-bottom: 13px
+			margin-bottom: 10px
+			line-height: 1.5
 			&:before
 				content: ""
 				position: absolute
@@ -550,7 +567,7 @@
 		color: $dark
 		+tr(border-color 300ms)
 		+placeholder
-			+proximanova
+			+light
 			font-size: 19px
 			color: #a6ad9f
 		&:focus
@@ -933,7 +950,7 @@
 	.doctors__info
 		display: table-cell
 		vertical-align: top
-		padding: 27px
+		padding: 28px
 		+r(960)
 			padding: 17px 17px 45px 
 		+r(480)
@@ -941,13 +958,13 @@
 	.doctors__name
 		+semibold
 		font-size: 24px
-		margin-bottom: 15px
+		margin-bottom: 17px
 		+r(767)
 			font-size: 19px
 			margin-bottom: 10px
 	.doctors__job
 		font-size: 15px
-		margin-bottom: 20px
+		margin-bottom: 30px
 .map
 	position: relative
 	height: 390px

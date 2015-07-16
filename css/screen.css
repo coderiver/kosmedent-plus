@@ -218,6 +218,14 @@ h4, .h4 { font-size: 18px; }
 .m-news .m-news__img img { width: 100%; height: auto; }
 @media only screen and (max-width: 600px) { .m-news .m-news__img { float: none; width: 100%; margin-right: 0; margin-bottom: 15px; } }
 
+.comm-topper { *zoom: 1; }
+.comm-topper:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 480px) { .comm-topper { text-align: center; margin-bottom: 40px; } }
+.comm-topper .h1 { float: left; }
+@media only screen and (max-width: 480px) { .comm-topper .h1 { float: none; margin-bottom: 20px; } }
+.comm-topper .btn { float: right; }
+@media only screen and (max-width: 480px) { .comm-topper .btn { float: none; } }
+
 .comm { padding: 28px; background: #e5f4a0; border: 1px solid #b7c380; margin-bottom: 24px; }
 @media only screen and (max-width: 600px) { .comm { padding: 35px 20px; } }
 .media__col .comm { margin-bottom: 0; border-width: 1px 1px 1px 0; }
@@ -231,6 +239,7 @@ h4, .h4 { font-size: 18px; }
 .comm .comm__text:before { content: ""; position: absolute; bottom: -11px; left: 48px; background: url('../img/icons-s4f1ecb2486.png') 0 -1138px no-repeat; width: 17px; height: 11px; }
 
 .footer .footer__in { max-width: 1158px; margin: 0 auto; background: #7d9601; text-align: center; padding: 35px 25px 10px; }
+@media only screen and (max-width: 767px) { .footer .footer__in { padding: 45px 25px 50px; } }
 .footer .footer__adress { margin-bottom: 20px; }
 .footer .footer__call { max-width: 700px; margin: 0 auto; }
 .footer .footer__call .link { margin: 0 22px 20px; }
@@ -268,13 +277,13 @@ h4, .h4 { font-size: 18px; }
 
 .article { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; margin-bottom: 45px; }
 .article h1 { margin-bottom: 25px; }
-.article h2 { margin: 40px 0 25px; }
+.article h2 { margin: 40px 0 19px; }
 .article img { display: block; width: 100%; }
 .article img[align="left"] { display: block; width: 50%; margin: 0 30px 18px 0; }
 .article a { color: #7e960d; }
 .article a:hover { text-decoration: none; }
 .article ul { margin-bottom: 40px; text-align: left; }
-.article ul li { position: relative; padding-left: 57px; margin-bottom: 13px; }
+.article ul li { position: relative; padding-left: 57px; margin-bottom: 10px; line-height: 1.5; }
 .article ul li:before { content: ""; position: absolute; top: 13px; left: 0; width: 36px; height: 1px; background: #7e960d; }
 .article blockquote { display: block; margin-bottom: 20px; padding: 22px; background: #e5f4a0; text-align: left; border: 1px solid #b7c380; font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; color: #222; font-size: 17px; line-height: 24px; }
 .article blockquote a { color: #222; text-decoration: underline; }
@@ -313,11 +322,11 @@ h4, .h4 { font-size: 18px; }
 
 .input, .textarea { display: block; text-align: left; }
 .input input, .input textarea, .textarea input, .textarea textarea { width: 100%; height: 55px; padding: 0 16px; border-bottom: 2px solid #cecece; border-width: 0 0 2px 0; font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #222; -moz-transition: border-color 300ms; -o-transition: border-color 300ms; -webkit-transition: border-color 300ms; transition: border-color 300ms; }
-.input input:-ms-input-placeholder, .input textarea:-ms-input-placeholder, .textarea input:-ms-input-placeholder, .textarea textarea:-ms-input-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
-.input input:-moz-placeholder, .input textarea:-moz-placeholder, .textarea input:-moz-placeholder, .textarea textarea:-moz-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
-.input input::-moz-placeholder, .input textarea::-moz-placeholder, .textarea input::-moz-placeholder, .textarea textarea::-moz-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
-.input input::-webkit-input-placeholder, .input textarea::-webkit-input-placeholder, .textarea input::-webkit-input-placeholder, .textarea textarea::-webkit-input-placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
-.input input::placeholder, .input textarea::placeholder, .textarea input::placeholder, .textarea textarea::placeholder { font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input:-ms-input-placeholder, .input textarea:-ms-input-placeholder, .textarea input:-ms-input-placeholder, .textarea textarea:-ms-input-placeholder { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input:-moz-placeholder, .input textarea:-moz-placeholder, .textarea input:-moz-placeholder, .textarea textarea:-moz-placeholder { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input::-moz-placeholder, .input textarea::-moz-placeholder, .textarea input::-moz-placeholder, .textarea textarea::-moz-placeholder { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input::-webkit-input-placeholder, .input textarea::-webkit-input-placeholder, .textarea input::-webkit-input-placeholder, .textarea textarea::-webkit-input-placeholder { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
+.input input::placeholder, .input textarea::placeholder, .textarea input::placeholder, .textarea textarea::placeholder { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #a6ad9f; }
 .input input:focus, .input textarea:focus, .textarea input:focus, .textarea textarea:focus { border-color: #7d9601; }
 .input input:focus:-ms-input-placeholder, .input textarea:focus:-ms-input-placeholder, .textarea input:focus:-ms-input-placeholder, .textarea textarea:focus:-ms-input-placeholder { font-size: 0; }
 .input input:focus:-moz-placeholder, .input textarea:focus:-moz-placeholder, .textarea input:focus:-moz-placeholder, .textarea textarea:focus:-moz-placeholder { font-size: 0; }
@@ -436,12 +445,12 @@ h4, .h4 { font-size: 18px; }
 .doctors .doctors__img img { display: block; margin: 0 auto; height: auto; min-height: 100%; }
 @media only screen and (max-width: 480px) { .doctors .doctors__img { display: block; padding-top: 30px; width: 100%; }
   .doctors .doctors__img img { height: auto; } }
-.doctors .doctors__info { display: table-cell; vertical-align: top; padding: 27px; }
+.doctors .doctors__info { display: table-cell; vertical-align: top; padding: 28px; }
 @media only screen and (max-width: 960px) { .doctors .doctors__info { padding: 17px 17px 45px; } }
 @media only screen and (max-width: 480px) { .doctors .doctors__info { display: block; } }
-.doctors .doctors__name { font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 24px; margin-bottom: 15px; }
+.doctors .doctors__name { font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 24px; margin-bottom: 17px; }
 @media only screen and (max-width: 767px) { .doctors .doctors__name { font-size: 19px; margin-bottom: 10px; } }
-.doctors .doctors__job { font-size: 15px; margin-bottom: 20px; }
+.doctors .doctors__job { font-size: 15px; margin-bottom: 30px; }
 
 .map { position: relative; height: 390px; }
 .map > div { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
