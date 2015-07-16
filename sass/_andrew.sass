@@ -1,31 +1,36 @@
 $green1: #7e960d
 $green1-l: #b8ce48
 .license
+	& > p
+		+r(767)
+			text-align: center
 	.h1
 		margin-bottom: 30px
 	.license__list
 		font-size: 0
 		margin-left: -3%
 		+r(900)
-			margin-left: -5%
-		+r(767)
-			margin-left: -3%
+			margin-left: -3.3%
 		+r(600)
 			margin-left: -5%
+		+r(360)
+			margin-left: 0
+			padding: 0 20px 
 	.license__item
 		display: inline-block
 		vertical-align: top
 		width: 22%
 		margin: 40px 0 28px 3%
 		+r(900)
-			width: 45%
-			margin-left: 5%
-		+r(767)
-			width: 22%
-			margin-left: 3%
+			width: 30%
+			margin-left: 3.3%
 		+r(600)
 			width: 45%
-			margin-left: 5%	 	
+			margin-left: 5% 
+		+r(360)
+			width: 100%
+			margin-left: 0
+			margin-top: 0 		
 		a
 			display: block
 			text-decoration: none
@@ -120,18 +125,16 @@ $green1-l: #b8ce48
 	.news__img
 		margin-bottom: 18px
 		width: 100%
-		height: 132px
-		font-size: 0
-		overflow: hidden
-		border-radius: 3px
 		img
-			min-width: 100%
-			min-height: 100%
-			border-radius: 3px
+			display: block
+			width: 100%
+			height: auto
 	.date
 		margin-bottom: 39px
 		+r(767)
-			text-align: center		
+			text-align: center
+		+r(480)
+			text-align: left			
 	.news__all
 		text-align: center	
 .icon-timing
@@ -139,22 +142,22 @@ $green1-l: #b8ce48
 	+s(timing)
 
 // doctors
-.doctors
-
 		
 .doctor
+	.article
+		h3
+			margin-top: 15px
+			margin-bottom: 20px
 	.doctor__topper
 		+clr
 		padding-left: 2px
-		margin-bottom: 30px
-		+r(767)
-			margin-bottom: 10px
 		+r(568)
 			text-align: center
 	.doctor__img
 		width: 212px
 		float: left
 		margin-right: 32px
+		margin-bottom: 30px
 		font-size: 0
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12)
 		img
@@ -162,6 +165,8 @@ $green1-l: #b8ce48
 			width: 100%
 			max-width: 212px
 			height: auto
+		+r(767)
+			margin-bottom: 10px	
 		+r(568)
 			float: none
 			margin-right: 0
@@ -187,6 +192,9 @@ $green1-l: #b8ce48
 		font-size: 15px
 		strong
 			font-size: 19px
+			+semibold
+		+r(768)
+			margin-bottom: 25px	
 	.doctor__education
 		.h3
 			+r(767)
@@ -230,9 +238,9 @@ $green1-l: #b8ce48
 	.nonres__content
 		display: table-cell
 		vertical-align: top
-		padding: 32px 32px 32px 0
+		padding: 23px 32px 65px 0
 		.h2
-			margin-bottom: 20px
+			margin-bottom: 14px
 		+r(600)
 			display: block
 			padding: 20px 	
@@ -242,8 +250,8 @@ $green1-l: #b8ce48
 			position: relative
 			display: inline-block
 			vertical-align: top
-			width: 50%
-			margin-bottom: 15px
+			width: 42%
+			margin-bottom: 5px
 			padding-left: 28px
 			&:before
 				content: ""
@@ -259,7 +267,7 @@ $green1-l: #b8ce48
 				letter-spacing: 0.5px
 				&:hover
 					text-decoration: none
-			+r(600)
+			+r(768)
 				width: 100%
 				padding-left: 0
 				margin-bottom: 8px

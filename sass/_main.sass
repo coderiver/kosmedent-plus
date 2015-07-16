@@ -53,12 +53,17 @@
 				display: inline-block
 				height: 53px
 				line-height: 53px
+				padding: 0 25px 
 				+semibold
 				font-size: 15px
 				text-transform: uppercase
 				color: $dark
 				&:hover
 					text-decoration: none
+				&.is-active
+					background: #7e960d
+					color: #fff
+					text-decoration: none	
 .topper
 	position: relative
 	padding: 0 25px 
@@ -204,6 +209,7 @@
 			color: #000
 .benefits
 	text-align: center
+	margin-bottom: 20px
 	& > p
 		margin-bottom: 25px
 	.benefits__item
@@ -284,7 +290,7 @@
 		margin-bottom: 0
 		border-width: 1px 1px 1px 0
 		+r(768)
-			border-width: 1px
+			border-width: 0 1px 1px 1px
 			.slider__item
 				height: auto 
 		+r(600)
@@ -302,6 +308,7 @@
 		padding-bottom: 25px
 		border-bottom: 1px solid #b7c380
 		margin-bottom: 25px
+		+light
 		&:before
 			content: ""
 			position: absolute
@@ -400,11 +407,13 @@
 	width: 247px
 	float: right
 	margin-left: 47px
+	margin-bottom: 25px
 	+r(900)
 		width: 212px
 		margin-left: 25px
 	+r(767)
 		width: 100%
+		margin-bottom: 0
 		float: none
 		margin-left: 0 
 		+order(2)	
@@ -710,12 +719,16 @@
 					border-bottom: none
 		.article
 			margin-bottom: 0
+			h3
+				margin-bottom: 15px
+			+r(768)
+				ul
+					margin-bottom: 25px	
 			+r(600)
 				h3
-					margin-bottom: 15px
+					text-align: center
 				ul
 					text-align: center
-					margin-bottom: 25px
 					li
 						padding-left: 0
 						margin-bottom: 10px
@@ -791,8 +804,7 @@
 		table-layout: fixed
 		padding: 30px 25px 40px 
 		margin-bottom: 35px
-		background: #f7f7f7
-		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12)
+		border: 1px solid #7e960d
 		+r(600)
 			padding: 20px 15px
 			display: block 
@@ -831,7 +843,7 @@
 	.h1
 		margin-bottom: 37px
 	.grid__item
-		margin-bottom: 24px 	
+		margin-bottom: 15px 	
 	.treatment__img
 		margin-bottom: 16px
 		font-size: 0
@@ -888,6 +900,7 @@
 	.price__row
 		display: table-row
 		border-top: 1px solid #cecece
+		+light
 		&:first-child
 			border-top: none
 		+r(568)
@@ -945,6 +958,7 @@
 			display: block
 			padding-top: 30px
 			width: 100%
+			border-right: none 
 			img
 				height: auto	
 	.doctors__info
@@ -959,7 +973,7 @@
 		+semibold
 		font-size: 24px
 		margin-bottom: 17px
-		+r(767)
+		+r(768)
 			font-size: 19px
 			margin-bottom: 10px
 	.doctors__job
@@ -1138,6 +1152,15 @@
 				width: 25%
 			&.info
 				width: 75%
+.success
+	padding-top: 8px
+	.success__title
+		margin-bottom: 30px
+		+light
+		font-size: 36px
+	+r(767)
+		text-align: center		
+				
 // popup
 .popup
 	position: fixed
