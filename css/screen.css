@@ -508,7 +508,7 @@ h4, .h4 { font-size: 18px; }
 .route .route__row:first-child { border-top: none; }
 .route .route__col { display: inline-block; vertical-align: top; width: 25%; font-size: 17px; color: #969696; padding-right: 5px; font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; }
 .route .route__col p { color: #222; margin-bottom: 0; font-size: 17px; text-align: left; font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; }
-.route .route__col p span { display: inline-block; margin-left: 10px; }
+.route .route__col p span { display: inline-block; margin-right: 10px; }
 .route .route__col a { font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; color: #222; font-size: 17px; }
 .route .route__col a:hover { text-decoration: none; }
 .route .route__col a.number { font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; color: #222; font-size: 17px; margin-left: 0; }
@@ -521,8 +521,8 @@ h4, .h4 { font-size: 18px; }
 .route .route__col.info { width: 28%; }
 .route .route__col.wide-link { width: 75%; }
 .route .route__col.wide-link a { display: inline-block; max-width: 100%; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
-@media only screen and (max-width: 1024px) { .route .route__col { font-size: 15px; margin-bottom: 5px; }
-  .route .route__col p { font-size: 15px; } }
+@media only screen and (max-width: 1024px) { .route .route__col { font-size: 17px; margin-bottom: 5px; }
+  .route .route__col p { font-size: 17px; } }
 @media only screen and (max-width: 768px) { .route .route__col.wide { width: 75%; }
   .route .route__col.wide .route__col.info { width: 100%; display: block; margin-bottom: 5px; }
   .route .route__col.wide .route__col.info .number { margin-bottom: 0; }
