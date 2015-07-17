@@ -282,7 +282,7 @@ h4, .h4 { font-size: 18px; }
 .article { font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; margin-bottom: 45px; }
 .article h1 { margin-bottom: 25px; }
 .article h2 { margin: 40px 0 19px; }
-.article img { display: block; width: 100%; }
+.article img { display: block; width: 100%; box-shadow: -1.5px 2.6px 5px rgba(0, 0, 0, 0.12); }
 .article img[align="left"] { display: block; width: 50%; margin: 0 30px 18px 0; }
 .article a { color: #7e960d; }
 .article a:hover { text-decoration: none; }
@@ -296,7 +296,8 @@ h4, .h4 { font-size: 18px; }
 .gallery { margin-bottom: 30px; }
 @media only screen and (max-width: 767px) { .gallery { margin-bottom: 0; } }
 
-@media only screen and (max-width: 767px) { .adv { padding: 0 8px; } }
+@media only screen and (max-width: 767px) { .adv { padding: 0 8px; }
+  .adv > p { text-align: center; } }
 .adv .adv__list { font-size: 0; }
 .adv .adv__item { display: inline-block; vertical-align: top; *zoom: 1; width: 50%; margin-bottom: 30px; }
 .adv .adv__item:after { content: " "; display: table; clear: both; }
@@ -573,7 +574,7 @@ h4, .h4 { font-size: 18px; }
 .news .news__item a:hover p { color: #b8ce48; }
 .news .news__item a .date { margin-bottom: 0; }
 .news .news__img { margin-bottom: 18px; width: 100%; }
-.news .news__img img { display: block; width: 100%; height: auto; }
+.news .news__img img { display: block; width: 100%; height: auto; box-shadow: -1.5px 2.6px 5px rgba(0, 0, 0, 0.12); }
 .news .date { margin-bottom: 39px; }
 @media only screen and (max-width: 767px) { .news .date { text-align: center; } }
 @media only screen and (max-width: 480px) { .news .date { text-align: left; } }
