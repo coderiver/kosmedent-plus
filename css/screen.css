@@ -364,16 +364,15 @@ h4, .h4 { font-size: 18px; }
 
 .radio-wrap { *zoom: 1; text-align: left; }
 .radio-wrap:after { content: " "; display: table; clear: both; }
-.radio-wrap .radio { float: right; width: 200px; }
+.radio-wrap .radio { float: right; width: 45%; }
 .radio-wrap .radio:first-child { float: left; }
-@media only screen and (max-width: 768px) { .radio-wrap .radio { width: 45%; } }
 
 .radio { position: relative; display: block; margin-bottom: 5px; }
 .radio input { position: absolute; opacity: 0; }
 .radio input + div { position: relative; padding-left: 32px; }
 .radio input + div:before { content: ""; position: absolute; top: 0; left: 0; width: 17px; height: 17px; border-radius: 50%; border: 1px solid #cecece; }
 .radio input + div span { display: block; margin-bottom: 5px; font-size: 15px; color: #222; }
-.radio input + div p { font-size: 15px; color: #c5c5c5; font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1.2; }
+.radio input + div p { font-size: 15px; color: #7c7c7c; font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1.2; }
 .radio input:checked + div:before { border-color: #819813; }
 .radio input:checked + div:after { content: ""; position: absolute; top: 6px; left: 6px; width: 5px; height: 5px; border-radius: 50%; background: #000; }
 
