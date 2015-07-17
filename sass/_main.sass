@@ -441,6 +441,9 @@
 		display: block
 		width: 50%
 		margin: 0 30px 18px 0
+		+r(568)
+			width: 100%
+			margin: 0 0 18px  
 	a
 		color: #7e960d
 		&:hover
@@ -462,7 +465,15 @@
 				height: 1px
 				background: #7e960d
 	blockquote
-		+quote			
+		+quote
+	+r(767)
+		text-align: center
+		ul
+			text-align: center
+			li
+				padding-left: 0
+				&:before
+					display: none				
 .gallery
 	margin-bottom: 30px
 	+r(767)

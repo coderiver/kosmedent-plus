@@ -286,6 +286,7 @@ h4, .h4 { font-size: 18px; }
 .article h2 { margin: 40px 0 19px; }
 .article img { display: block; width: 100%; box-shadow: -1.5px 2.6px 5px rgba(0, 0, 0, 0.12); }
 .article img[align="left"] { display: block; width: 50%; margin: 0 30px 18px 0; }
+@media only screen and (max-width: 568px) { .article img[align="left"] { width: 100%; margin: 0 0 18px; } }
 .article a { color: #7e960d; }
 .article a:hover { text-decoration: none; }
 .article ul { margin-bottom: 40px; text-align: left; }
@@ -294,6 +295,10 @@ h4, .h4 { font-size: 18px; }
 .article blockquote { display: block; margin-bottom: 20px; padding: 22px; background: #e5f4a0; text-align: left; border: 1px solid #b7c380; font-family: "ProximaNova-Regular", Arial, sans-serif; font-style: normal; font-weight: normal; color: #222; font-size: 17px; line-height: 24px; }
 .article blockquote a { color: #222; text-decoration: underline; }
 .article blockquote a:hover { text-decoration: none; }
+@media only screen and (max-width: 767px) { .article { text-align: center; }
+  .article ul { text-align: center; }
+  .article ul li { padding-left: 0; }
+  .article ul li:before { display: none; } }
 
 .gallery { margin-bottom: 30px; }
 @media only screen and (max-width: 767px) { .gallery { margin-bottom: 0; } }
@@ -662,8 +667,9 @@ h4, .h4 { font-size: 18px; }
 .slick-prev:focus, .slick-next:focus { outline: none; }
 .slick-prev.slick-disabled, .slick-next.slick-disabled { opacity: 0.2; }
 .slick-prev:before, .slick-next:before { height: 82px; line-height: 82px; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-.gallery .slick-prev, .gallery .slick-next { opacity: 0; visibility: hidden; pointer-events: none; -moz-transition: opacity 300ms, -moz-transform 300ms; -o-transition: opacity 300ms, -o-transform 300ms; -webkit-transition: opacity 300ms, -webkit-transform 300ms; transition: opacity 300ms, transform 300ms; }
+.gallery .slick-prev, .gallery .slick-next { opacity: 0; -moz-transition: opacity 300ms, -moz-transform 300ms; -o-transition: opacity 300ms, -o-transform 300ms; -webkit-transition: opacity 300ms, -webkit-transform 300ms; transition: opacity 300ms, transform 300ms; }
 @media only screen and (max-width: 1024px) { .slick-prev, .slick-next { opacity: 0; } }
+@media only screen and (max-width: 767px) { .gallery .slick-prev, .gallery .slick-next { opacity: 0; visibility: hidden; pointer-events: none; } }
 
 .slick-prev { left: 12px; background: url('../img/icons-s4f1ecb2486.png') 0 -1073px no-repeat; width: 26px; height: 55px; }
 .gallery .slick-prev { -moz-transform: translateX(-12px); -ms-transform: translateX(-12px); -webkit-transform: translateX(-12px); transform: translateX(-12px); }
