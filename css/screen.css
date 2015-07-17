@@ -451,6 +451,7 @@ h4, .h4 { font-size: 18px; }
 
 .doctors .h1 { margin-bottom: 25px; }
 .doctors > p { margin-bottom: 35px; }
+@media only screen and (max-width: 767px) { .doctors > p { text-align: center; } }
 .doctors .doctors__list { padding-left: 4px; }
 .doctors .doctors__item { display: table; width: 100%; margin-bottom: 35px; border-collapse: collapse; table-layout: fixed; background: #ceeec2; border: 1px solid #b7c380; }
 @media only screen and (max-width: 480px) { .doctors .doctors__item { display: block; text-align: center; margin-bottom: 16px; } }
