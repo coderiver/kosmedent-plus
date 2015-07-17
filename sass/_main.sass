@@ -626,15 +626,16 @@
 			display: block
 .textarea
 	position: relative
-	padding-bottom: 20px
 	&:after
 		content: ""
 		position: absolute
-		bottom: 35px
+		bottom: 15px
 		right: 0
 		+arr(13, 9, #cecece, br)
 		pointer-events: none
 		+tr(border-color 300ms)
+	.error__alert
+		bottom: -12px	
 	.form_half &
 		&:after
 			bottom: 30px
@@ -822,6 +823,8 @@
 		margin-bottom: 26px
 	& > p
 		margin-bottom: 38px
+		+r(767)
+			text-align: center
 	.partners__list
 		margin-bottom: 48px		
 	.partners__item
@@ -930,7 +933,7 @@
 	.price__row
 		display: table-row
 		border-top: 1px solid #cecece
-		+light
+		+pfdin
 		&:first-child
 			border-top: none
 		+r(568)

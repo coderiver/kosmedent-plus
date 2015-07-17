@@ -353,8 +353,9 @@ h4, .h4 { font-size: 18px; }
 .input.has-error input, .input.has-error textarea, .textarea.has-error input, .textarea.has-error textarea { border-color: #ff0000; }
 .input.has-error .error__alert, .textarea.has-error .error__alert { display: block; }
 
-.textarea { position: relative; padding-bottom: 20px; }
-.textarea:after { content: ""; position: absolute; bottom: 35px; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #cecece transparent; pointer-events: none; -moz-transition: border-color 300ms; -o-transition: border-color 300ms; -webkit-transition: border-color 300ms; transition: border-color 300ms; }
+.textarea { position: relative; }
+.textarea:after { content: ""; position: absolute; bottom: 15px; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #cecece transparent; pointer-events: none; -moz-transition: border-color 300ms; -o-transition: border-color 300ms; -webkit-transition: border-color 300ms; transition: border-color 300ms; }
+.textarea .error__alert { bottom: -12px; }
 .form_half .textarea:after { bottom: 30px; }
 .textarea.is-focused:after { width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #7d9601 transparent; }
 .textarea.has-error:after { width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #ff0000 transparent; }
@@ -416,6 +417,7 @@ h4, .h4 { font-size: 18px; }
 
 .partners .h1 { margin-bottom: 26px; }
 .partners > p { margin-bottom: 38px; }
+@media only screen and (max-width: 767px) { .partners > p { text-align: center; } }
 .partners .partners__list { margin-bottom: 48px; }
 .partners .partners__item { display: table; width: 100%; table-layout: fixed; padding: 30px 25px 40px; margin-bottom: 35px; border: 1px solid #7e960d; }
 @media only screen and (max-width: 600px) { .partners .partners__item { padding: 20px 15px; display: block; text-align: center; } }
@@ -446,7 +448,7 @@ h4, .h4 { font-size: 18px; }
 @media only screen and (max-width: 568px) { .price { text-align: center; padding: 20px 20px 0; } }
 .price .price__table { display: table; width: 100%; table-layout: fixed; border-collapse: collapse; }
 @media only screen and (max-width: 568px) { .price .price__table { display: block; } }
-.price .price__row { display: table-row; border-top: 1px solid #cecece; font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; }
+.price .price__row { display: table-row; border-top: 1px solid #cecece; font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; }
 .price .price__row:first-child { border-top: none; }
 @media only screen and (max-width: 568px) { .price .price__row { display: block; } }
 .price .price__name { display: table-cell; text-align: left; vertical-align: middle; padding: 20px 0; }
