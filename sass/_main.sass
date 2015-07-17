@@ -464,6 +464,8 @@
 		+quote			
 .gallery
 	margin-bottom: 30px
+	+r(767)
+		margin-bottom: 0
 // advantages
 .adv
 	+r(767)
@@ -477,9 +479,7 @@
 		width: 50%
 		margin-bottom: 30px
 		+r(900)
-			width: 100% 
-		+r(767)
-			margin-bottom: 10px
+			width: 100%
 	.adv__icon
 		width: 81px
 		float: left
@@ -487,16 +487,17 @@
 	.adv__text
 		overflow: hidden
 		padding-right: 7%
+		.h3
+			margin-bottom: 10px
 		p
 			font-size: 17px
 			color: $dark
 			text-align: left
 			+light
+			margin-bottom: 0
 		+r(767)
 			.h3
-				margin-bottom: 8px
-			p
-				margin-bottom: 0										
+				margin-bottom: 8px										
 .history
 	& > p
 		margin-bottom: 34px
