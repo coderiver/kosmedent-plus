@@ -59,6 +59,7 @@ h1, .h1 { font-size: 32px; margin-bottom: 25px; }
 h2, .h2 { font-size: 26px; margin-bottom: 30px; }
 
 h3, .h3 { font-size: 19px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; }
+@media only screen and (max-width: 767px) { h3, .h3 { text-align: center; } }
 
 h4, .h4 { font-size: 18px; }
 
@@ -306,15 +307,18 @@ h4, .h4 { font-size: 18px; }
 .adv .adv__text p { font-size: 17px; color: #222; text-align: left; font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; margin-bottom: 0; }
 @media only screen and (max-width: 767px) { .adv .adv__text .h3 { margin-bottom: 8px; } }
 
+@media only screen and (max-width: 767px) { .history { text-align: center; } }
 .history > p { margin-bottom: 34px; }
 .history .h1 { margin-bottom: 31px; }
 .history .history__list { font-size: 0; }
 .history .history__list .history__item { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 30px; padding-right: 7%; }
 .history .history__list .history__item .h3 { line-height: 1.4; margin-bottom: 13px; }
-.history .history__list .history__item p { margin-bottom: 0; font-size: 15px; color: #222; font-family: "Conv_PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; }
+.history .history__list .history__item p { margin-bottom: 0; font-size: 17px; color: #222; font-family: "Conv_PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; }
 @media only screen and (max-width: 900px) { .history .history__list .history__item { width: 100%; padding-right: 0; } }
 .history .history__list .history__year { position: relative; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 36px; padding-bottom: 27px; margin-bottom: 17px; }
 .history .history__list .history__year:after { content: ""; position: absolute; bottom: 0; left: 0; width: 82px; height: 4px; background: #bed746; }
+@media only screen and (max-width: 767px) { .history .history__list .history__year { display: inline-block; }
+  .history .history__list .history__year:after { left: 50%; margin-left: -41px; } }
 
 .form.form_half { max-width: 500px; }
 .form .form__row { position: relative; margin-bottom: 10px; padding-bottom: 25px; text-align: left; }
@@ -416,6 +420,7 @@ h4, .h4 { font-size: 18px; }
 .partners .partners__content a:hover { text-decoration: none; }
 @media only screen and (max-width: 600px) { .partners .partners__content { display: block; width: 100%; } }
 .partners .partners__title { font-family: "MarkSimonsonProximaNovaLight", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 28px; margin-bottom: 20px; }
+@media only screen and (max-width: 768px) { .partners .partners__title { font-size: 24px; line-height: 34px; } }
 
 .treatment .h1 { margin-bottom: 37px; }
 .treatment .grid__item { margin-bottom: 15px; }
@@ -533,15 +538,15 @@ h4, .h4 { font-size: 18px; }
 @media only screen and (max-width: 600px) { .popup .popup__content .h1 { margin-bottom: 20px; } }
 
 @media only screen and (max-width: 767px) { .license > p { text-align: center; } }
-.license .h1 { margin-bottom: 30px; }
+.license .h1 { margin-bottom: 25px; }
 .license .license__list { font-size: 0; margin-left: -3%; }
 @media only screen and (max-width: 900px) { .license .license__list { margin-left: -3.3%; } }
 @media only screen and (max-width: 600px) { .license .license__list { margin-left: -5%; } }
 @media only screen and (max-width: 360px) { .license .license__list { margin-left: 0; padding: 0 20px; } }
-.license .license__item { display: inline-block; vertical-align: top; width: 22%; margin: 40px 0 28px 3%; }
+.license .license__item { display: inline-block; vertical-align: top; width: 22%; margin: 25px 0 0 3%; }
 @media only screen and (max-width: 900px) { .license .license__item { width: 30%; margin-left: 3.3%; } }
 @media only screen and (max-width: 600px) { .license .license__item { width: 45%; margin-left: 5%; } }
-@media only screen and (max-width: 360px) { .license .license__item { width: 100%; margin-left: 0; margin-top: 0; } }
+@media only screen and (max-width: 360px) { .license .license__item { width: 100%; margin-left: 0; } }
 .license .license__item a { display: block; text-decoration: none; }
 .license .license__item a:hover span { color: #7e960d; border-color: transparent; }
 .license .license__item a:hover .license__img:before { opacity: 1; }
@@ -585,10 +590,10 @@ h4, .h4 { font-size: 18px; }
 @media only screen and (max-width: 767px) { .doctor .doctor__img { margin-bottom: 10px; } }
 @media only screen and (max-width: 568px) { .doctor .doctor__img { float: none; margin-right: 0; display: inline-block; text-align: center; margin-bottom: 20px; } }
 .doctor .doctor__about { overflow: hidden; }
-.doctor .doctor__about p { font-size: 15px; color: #222; }
+.doctor .doctor__about p { font-size: 17px; color: #222; }
 @media only screen and (max-width: 767px) { .doctor .doctor__about p { margin-bottom: 10px; } }
 @media only screen and (max-width: 568px) { .doctor .doctor__about { overflow: visible; display: block; } }
-.doctor .doctor__spec { border: 1px solid #cecece; padding: 16px 0; border-width: 1px 0; margin-bottom: 30px; font-size: 15px; }
+.doctor .doctor__spec { border: 1px solid #cecece; padding: 16px 0; border-width: 1px 0; margin-bottom: 30px; font-size: 17px; }
 .doctor .doctor__spec strong { font-size: 19px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; }
 @media only screen and (max-width: 768px) { .doctor .doctor__spec { margin-bottom: 25px; } }
 .doctor .doctor__education { font-family: "Conv_PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; }
