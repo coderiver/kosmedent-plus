@@ -1092,7 +1092,7 @@
 		margin-bottom: 5px
 	& > p
 		color: $dark
-		font-size: 15px
+		font-size: 17px
 	.route__row
 		font-size: 0
 		border-top: 1px solid #cecece
@@ -1110,7 +1110,7 @@
 		p
 			color: $dark
 			margin-bottom: 0
-			font-size: 15px
+			font-size: 17px
 			text-align: left
 			+pfdin
 			span
@@ -1119,18 +1119,18 @@
 		a
 			+pfdin
 			color: $dark
-			font-size: 15px
+			font-size: 17px
 			&:hover
 				text-decoration: none
 		a.number
 			+pfdin
 			color: $dark
+			font-size: 17px
 			margin-left: 0
 			&.number_viber
 				color: #b580e0
 			&.number_skype
 				+proximanova
-				font-size: 15px
 				color: #00aeec
 			&.number_mail
 				+proximanova
@@ -1172,6 +1172,10 @@
 				width: 25%
 			&.info
 				width: 75%
+		+r(568)
+			.number
+				&.number_skype, &.number_mail
+					font-size: 15px		
 .success
 	padding-top: 8px
 	.success__title

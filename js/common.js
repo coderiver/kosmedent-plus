@@ -1,6 +1,20 @@
 head.ready(function() {
 
-	 // popup
+	 // sticky footer
+
+   function stickyFooter() {
+      var height = $('.footer').outerHeight();
+
+      $('.out').css('margin-bottom', -height);
+      $('.push').css('height', height);
+   }
+   stickyFooter();
+
+   $(window).resize(function() {
+     stickyFooter();
+   });
+
+   // popup
 
     $('.js-popup').on('click', function(){
         var link = $(this).data('link');
