@@ -356,7 +356,8 @@ h4, .h4 { font-size: 18px; }
 .textarea { position: relative; }
 .textarea:after { content: ""; position: absolute; bottom: 15px; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #cecece transparent; pointer-events: none; -moz-transition: border-color 300ms; -o-transition: border-color 300ms; -webkit-transition: border-color 300ms; transition: border-color 300ms; }
 .textarea .error__alert { bottom: -12px; }
-.form_half .textarea:after { bottom: 30px; }
+.form_half .textarea:after { bottom: 10px; }
+.form_half .textarea .error__alert { bottom: -17px; }
 .textarea.is-focused:after { width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #7d9601 transparent; }
 .textarea.has-error:after { width: 0px; height: 0px; border-style: solid; border-width: 0 0 9px 13px; border-color: transparent transparent #ff0000 transparent; }
 .textarea textarea { height: 60px; padding: 16px; max-width: 100%; min-width: 100%; max-height: 200px; }
