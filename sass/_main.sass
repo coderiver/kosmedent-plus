@@ -579,7 +579,6 @@
 			display: none
 		& > p
 			margin-bottom: 15px
-			+semibold
 			font-size: 19px 	
 		&.require
 			&:before
@@ -661,7 +660,7 @@
 		width: 200px
 		&:first-child
 			float: left
-		+r(600)
+		+r(768)
 			width: 45% 	 		
 .radio
 	position: relative
@@ -688,9 +687,10 @@
 			font-size: 15px
 			color: $dark
 		p
-			font-size: 13px
+			font-size: 15px
 			color: #c5c5c5
-			line-height: 1.6
+			+pfdin
+			line-height: 1.2
 	input:checked + div
 		&:before
 			border-color: #819813
@@ -1223,7 +1223,7 @@
 		vertical-align: middle
 		background: #fff
 		width: 600px
-		padding: 55px 48px 50px
+		padding: 55px 48px 60px
 		+r(700)
 			width: 100% 
 			padding: 55px 28px 30px
@@ -1250,5 +1250,6 @@
 		.h1
 			text-align: center
 			margin-bottom: 40px
+			color: #21310f
 			+r(600)
 				margin-bottom: 20px				 									

@@ -331,7 +331,7 @@ h4, .h4 { font-size: 18px; }
 .form.form_half { max-width: 500px; }
 .form .form__row { position: relative; margin-bottom: 10px; padding-bottom: 25px; text-align: left; }
 .form .form__row:before { content: "*"; position: absolute; top: 16px; left: 0; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; color: #e38600; z-index: 2; display: none; }
-.form .form__row > p { margin-bottom: 15px; font-family: "MarkSimonsonProximaNovaSemibold", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 19px; }
+.form .form__row > p { margin-bottom: 15px; font-size: 19px; }
 .form .form__row.require:before { display: block; }
 @media only screen and (max-width: 767px) { .form .form__submit { margin-bottom: 10px; text-align: center; } }
 
@@ -366,14 +366,14 @@ h4, .h4 { font-size: 18px; }
 .radio-wrap:after { content: " "; display: table; clear: both; }
 .radio-wrap .radio { float: right; width: 200px; }
 .radio-wrap .radio:first-child { float: left; }
-@media only screen and (max-width: 600px) { .radio-wrap .radio { width: 45%; } }
+@media only screen and (max-width: 768px) { .radio-wrap .radio { width: 45%; } }
 
 .radio { position: relative; display: block; margin-bottom: 5px; }
 .radio input { position: absolute; opacity: 0; }
 .radio input + div { position: relative; padding-left: 32px; }
 .radio input + div:before { content: ""; position: absolute; top: 0; left: 0; width: 17px; height: 17px; border-radius: 50%; border: 1px solid #cecece; }
 .radio input + div span { display: block; margin-bottom: 5px; font-size: 15px; color: #222; }
-.radio input + div p { font-size: 13px; color: #c5c5c5; line-height: 1.6; }
+.radio input + div p { font-size: 15px; color: #c5c5c5; font-family: "PFDinDisplayPro-Light", Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1.2; }
 .radio input:checked + div:before { border-color: #819813; }
 .radio input:checked + div:after { content: ""; position: absolute; top: 6px; left: 6px; width: 5px; height: 5px; border-radius: 50%; background: #000; }
 
@@ -540,14 +540,14 @@ h4, .h4 { font-size: 18px; }
 
 .popup { position: fixed; top: 0; bottom: 0; right: 0; left: 0; background: rgba(0, 0, 0, 0.7); text-align: center; font-size: 0; overflow-y: auto; z-index: 999; }
 .popup:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.popup .popup__in { position: relative; display: inline-block; vertical-align: middle; background: #fff; width: 600px; padding: 55px 48px 50px; }
+.popup .popup__in { position: relative; display: inline-block; vertical-align: middle; background: #fff; width: 600px; padding: 55px 48px 60px; }
 @media only screen and (max-width: 700px) { .popup .popup__in { width: 100%; padding: 55px 28px 30px; } }
 @media only screen and (max-width: 480px) { .popup .popup__in { padding: 55px 16px 30px; } }
 .popup .popup__close { position: absolute; top: -31px; right: -48px; background: url('../img/icons-s4f1ecb2486.png') 0 -677px no-repeat; width: 26px; height: 26px; opacity: 0.7; -moz-transition: opacity 300ms; -o-transition: opacity 300ms; -webkit-transition: opacity 300ms; transition: opacity 300ms; }
 .popup .popup__close:hover { opacity: 1; }
 @media only screen and (max-width: 1024px) { .popup .popup__close { top: 20px; right: 20px; background: url('../img/icons-s4f1ecb2486.png') 0 -641px no-repeat; width: 26px; height: 26px; opacity: 1; } }
 @media only screen and (max-width: 568px) { .popup .popup__close { top: 15px; right: 15px; } }
-.popup .popup__content .h1 { text-align: center; margin-bottom: 40px; }
+.popup .popup__content .h1 { text-align: center; margin-bottom: 40px; color: #21310f; }
 @media only screen and (max-width: 600px) { .popup .popup__content .h1 { margin-bottom: 20px; } }
 
 @media only screen and (max-width: 767px) { .license > p { text-align: center; } }
